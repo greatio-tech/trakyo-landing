@@ -1,0 +1,367 @@
+.main {
+  padding: 1rem 8rem;
+  min-height: 100vh;
+  color: white;
+  background: #000c17;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  /* max-width: var(--max-width); */
+  width: 100%;
+  z-index: 2;
+  /* font-family: var(--font-mono); */
+}
+
+.description a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.description p {
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+  background-color: rgba(var(--callout-rgb), 0.5);
+  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border-radius: var(--border-radius);
+}
+
+.navManu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 32px;
+}
+
+.center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.centerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 380px;
+}
+
+.ButtonArea {
+  display: flex;
+  gap: 25px;
+}
+
+.AndroidButton {
+  width: 150px;
+  height: 46px;
+  border-radius: 8px;
+  opacity: 0px;
+  background: #ffffff;
+  border: none;
+  color: #0461fe;
+}
+
+.IOSButton {
+  width: 150px;
+  height: 46px;
+  border-radius: 8px;
+  opacity: 0px;
+  background: #0461fe;
+  border: none;
+  color: #ffffff;
+}
+
+.secondPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 8rem;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+.aboutArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+  gap: 50px;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.aboutButton {
+  width: 91pxpx;
+  height: 43pxpx;
+  top: 220px;
+  left: 915px;
+  padding: 12px 24px 12px 24px;
+  gap: 0px;
+  border-radius: 6px;
+  opacity: 0px;
+  background: #0461fe1a;
+  border: none;
+  color: #0461fe;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  text-align: center;
+}
+
+.aboutText {
+  width: 76%;
+  text-align: center;
+}
+
+.ThirdPage {
+  padding: 1rem 8rem;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+.FeatureCards {
+  width: 395px;
+  height: 230px;
+  gap: 15px;
+  border-radius: 16px;
+  background: #ffffff;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.FeatureArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: 50px;
+  justify-content: center;
+}
+
+.FeatureContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.FeatureCardsArea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.cardText {
+  font-size: 14px;
+}
+
+.forthPage {
+  padding: 1rem 8rem;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+.QuickGuideArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: 35px;
+  justify-content: center;
+}
+
+.QuickGuide {
+  display: flex;
+  align-items: center;
+}
+
+.Dashline {
+  border: 1px dashed #0461fe;
+  width: 278px;
+  height: 0px;
+  margin: 3px;
+}
+
+.DashDot {
+  background: #0461fe;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.QuickGuideIcon {
+  margin: 15px;
+}
+
+.QuickGuideContent {
+  display: flex;
+  gap: 35px;
+  flex-direction: column;
+  /* justify-content: space-evenly; */
+  align-items: center;
+}
+
+.fifthPage {
+  padding: 1rem 8rem;
+  min-height: 100vh;
+  background: #f2f2f2;
+}
+
+.ContactusArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  gap: 35px;
+  justify-content: center;
+}
+
+.Contactus {
+  width: 1328px;
+  height: 562px;
+  gap: 10px;
+  border-radius: 24px;
+  background: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.ContactusShow {
+  width: 504px;
+  height: 522px;
+  border-radius: 16px;
+  background: linear-gradient(179.52deg, #0461fe 2.28%, #023a98 100%);
+  color: #ffffff;
+  padding: 20px;
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ContactusForm {
+  width: 550px;
+}
+
+.Contactuslist {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.ContactDetails {
+  display: flex;
+  align-items: center;
+}
+
+.ContactusForm {
+  height: 522px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.input1 {
+  width: 545px;
+  height: 56px;
+  border-radius: 12px;
+  background: #f2f2f2;
+  border: none;
+}
+.input3 {
+  width: 545px;
+  height: 134px;
+  border-radius: 12px;
+  background: #f2f2f2;
+  border: none;
+}
+
+.sendButtonArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sendButton {
+  width: 427px;
+  height: 56px;
+  border-radius: 8px;
+  background: #0461fe;
+  border: none;
+}
+
+.footer {
+  padding: 1rem 8rem;
+  background: #000c17;
+  height: 384px;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+.footerJoinAs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footerSocialArea {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: #0461fe;
+}
+
+.footerSocialsShow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.footerDownloadArea {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.footerMenuList {
+  display: flex;
+  gap: 26px;
+  flex-direction: column;
+}
