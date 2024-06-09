@@ -3,6 +3,7 @@
   min-height: 100vh;
   color: white;
   background: #000c17;
+  /* font-family: Roboto; */
 }
 
 .description {
@@ -37,6 +38,7 @@
   justify-content: space-around;
   align-items: center;
   gap: 32px;
+  font-size: 16px;
 }
 
 .center {
@@ -45,12 +47,20 @@
   align-items: center;
 }
 
+.centerHeading {
+  font-size: 48px;
+}
+
+.ContentsubHead {
+  font-size: 24px;
+}
+
 .centerContent {
   display: flex;
   flex-direction: column;
   justify-content: center;
   gap: 20px;
-  width: 380px;
+  width: 648px;
 }
 
 .ButtonArea {
@@ -66,6 +76,7 @@
   background: #ffffff;
   border: none;
   color: #0461fe;
+  font-size: 16px;
 }
 
 .IOSButton {
@@ -76,6 +87,7 @@
   background: #0461fe;
   border: none;
   color: #ffffff;
+  font-size: 16px;
 }
 
 .secondPage {
@@ -85,6 +97,10 @@
   padding: 1rem 8rem;
   min-height: 100vh;
   background: #f2f2f2;
+}
+
+.aboutHeading {
+  font-size: 32px;
 }
 
 .aboutArea {
@@ -127,6 +143,7 @@
 .aboutText {
   width: 76%;
   text-align: center;
+  font-size: 18px;
 }
 
 .ThirdPage {
@@ -171,14 +188,24 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+
+.cardHeading {
+  font-size: 18px;
+  font-weight: 600;
+}
 .cardText {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .forthPage {
   padding: 1rem 8rem;
   min-height: 100vh;
   background: #f2f2f2;
+}
+
+.aboutHowIt{
+  font-size: 32px;
+  font-weight: 600;
 }
 
 .QuickGuideArea {
@@ -225,6 +252,10 @@
   padding: 1rem 8rem;
   min-height: 100vh;
   background: #f2f2f2;
+}
+
+.ContactusGetIn{
+  font-size: 24px;
 }
 
 .ContactusArea {

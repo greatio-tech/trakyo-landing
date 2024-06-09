@@ -26,8 +26,12 @@ export default function Home() {
 
         <div className={styles.center}>
           <div className={styles.centerContent}>
-            <h2>Connecting Vehicle Owners with Ease</h2>
-            <div>Simplify communication with a simple scan</div>
+            <h2 className={styles.centerHeading}>
+              Connecting Vehicle Owners with Ease
+            </h2>
+            <div className={styles.ContentsubHead}>
+              Simplify communication with a simple scan
+            </div>
             <div className={styles.ButtonArea}>
               <button className={styles.AndroidButton}>Android</button>
               <button className={styles.IOSButton}>IOS</button>
@@ -51,7 +55,9 @@ export default function Home() {
             <div>
               <button className={styles.aboutButton}>About</button>
             </div>
-            <div>Connecting Vehicle Owners with Ease</div>
+            <h2 className={styles.aboutHeading}>
+              Connecting Vehicle Owners with Ease
+            </h2>
             <div className={styles.aboutText}>
               At Trakyo, our mission is to revolutionize the way people connect
               with vehicle owners. Founded on the principles of convenience,
@@ -89,7 +95,7 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div>Effortless QR Scanning</div>
+              <div className={styles.cardHeading}>Effortless QR Scanning</div>
               <div className={styles.cardText}>
                 Scan QR codes to report issues instantly.Capture and upload
                 photos for comprehensive reporting.
@@ -106,7 +112,7 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div>Anonymous Calling</div>
+              <div className={styles.cardHeading}>Anonymous Calling</div>
               <div className={styles.cardText}>
                 Contact vehicle owners without revealing your number. Ensure
                 your privacy while getting urgent issues addressed.
@@ -123,7 +129,9 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div>Emergency Contact Routing</div>
+              <div className={styles.cardHeading}>
+                Emergency Contact Routing
+              </div>
               <div className={styles.cardText}>
                 Automatically call emergency contacts if the owner is
                 unreachable. Multiple emergency contact options for reliable
@@ -141,7 +149,9 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div>Easy Registration & QR Ordering</div>
+              <div className={styles.cardHeading}>
+                Easy Registration & QR Ordering
+              </div>
               <div className={styles.cardText}>
                 Register, order, and track QR codes seamlessly. Quick and simple
                 setup to get started right away.
@@ -158,7 +168,9 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div>Dynamic Contact Management</div>
+              <div className={styles.cardHeading}>
+                Dynamic Contact Management
+              </div>
               <div className={styles.cardText}>
                 Update your contact details anytime. Easily switch contacts when
                 you're away.
@@ -175,7 +187,7 @@ export default function Home() {
                   priority
                 />
               </div>
-              <div>Vehicle Document Storage</div>
+              <div className={styles.cardHeading}>Vehicle Document Storage</div>
               <div className={styles.cardText}>
                 Securely store and access vehicle documents. Keep all your
                 essential documents in one place for convenience.
@@ -188,7 +200,7 @@ export default function Home() {
         <div className={styles.QuickGuideArea}>
           <div className={styles.QuickGuideContent}>
             <button className={styles.aboutButton}>Quick Guide</button>
-            <div>How it works?</div>
+            <div className={styles.aboutHowIt}>How it works?</div>
           </div>
           <div className={styles.QuickGuide}>
             <div className={styles.QuickGuideIcon}>
@@ -234,7 +246,7 @@ export default function Home() {
           </div>
           <div className={styles.Contactus}>
             <div className={styles.ContactusShow}>
-              <h2>Get in Touch with Trakyo</h2>
+              <h2 className={styles.ContactusGetIn}>Get in Touch with Trakyo</h2>
               <div>
                 We are here to help! Whether you have a question, need support,
                 or want to give feedback, feel free to reach out to us.
