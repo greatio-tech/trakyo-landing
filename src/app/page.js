@@ -7,13 +7,13 @@ export default function Home() {
       <div className={styles.main}>
         <div className={styles.description}>
           <div>
-            <Image
+            <img
               src="/Trakyo_logo_white.svg"
               alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={128}
-              height={70}
-              priority
+              className={styles.TrakyoLogo}
+              // width={128}
+              // height={36}
+              // priority
             />
           </div>
           <div className={styles.navManu}>
@@ -33,24 +33,61 @@ export default function Home() {
               Simplify communication with a simple scan
             </div>
             <div className={styles.ButtonArea}>
-              <button className={styles.AndroidButton}>Android</button>
-              <button className={styles.IOSButton}>IOS</button>
+              <button className={styles.AndroidButton}>
+                <Image
+                  src="/playstore.svg"
+                  alt="Vercel Logo"
+                  // className={styles.vercelLogo}
+                  width={24}
+                  height={24}
+                />
+
+                <span>Android</span>
+              </button>
+              <button className={styles.IOSButton}>
+                <Image
+                  src="/ios.svg"
+                  alt="Vercel Logo"
+                  // className={styles.vercelLogo}
+                  width={24}
+                  height={24}
+                />
+                <span style={{ marginTop: "5px" }}>IOS</span>
+              </button>
             </div>
           </div>
           <div>
-            <Image
+            <img
               src="/Landing_page.png"
               alt="mobileImage"
-              // className={styles.vercelLogo}
-              width={400}
-              height={650}
-              priority
+              className={styles.landingLogo}
+              // width={"646"}
+              // height={764}
+              // priority
             />
           </div>
         </div>
       </div>
       <div className={styles.secondPage}>
         <div className={styles.aboutArea}>
+          <div className={styles.description}>
+            <div>
+              <img
+                src="/logo_black.svg"
+                alt="Vercel Logo"
+                className={styles.TrakyoLogo}
+                // width={128}
+                // height={36}
+                // priority
+              />
+            </div>
+            <div className={styles.navManu}>
+              <span>About</span>
+              <span>Features</span>
+              <span>Quick Guide</span>
+              <span>Contact Us</span>
+            </div>
+          </div>
           <div className={styles.aboutContent}>
             <div>
               <button className={styles.aboutButton}>About</button>
@@ -68,17 +105,33 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <Image
+            <img
               src="/Landing2.png"
               alt="Vercel Logo"
-              width={480}
-              height={500}
-              priority
+              className={styles.aboutLanding}
             />
           </div>
         </div>
       </div>
       <div className={styles.ThirdPage}>
+        <div className={styles.description}>
+          <div>
+            <img
+              src="/logo_black.svg"
+              alt="Vercel Logo"
+              className={styles.TrakyoLogo}
+              // width={128}
+              // height={36}
+              // priority
+            />
+          </div>
+          <div className={styles.navManu}>
+            <span>About</span>
+            <span>Features</span>
+            <span>Quick Guide</span>
+            <span>Contact Us</span>
+          </div>
+        </div>
         <div className={styles.FeatureArea}>
           <div className={styles.FeatureContent}>
             <button className={styles.aboutButton}>Feature</button>
@@ -87,11 +140,11 @@ export default function Home() {
             <div className={styles.FeatureCards}>
               <div>
                 <Image
-                  src="/scan_card_Icon.svg"
+                  src="/scanner.svg"
                   alt="Vercel Logo"
                   className={styles.vercelLogo}
-                  width={60}
-                  height={60}
+                  width={48}
+                  height={48}
                   priority
                 />
               </div>
@@ -104,11 +157,11 @@ export default function Home() {
             <div className={styles.FeatureCards}>
               <div>
                 <Image
-                  src="/scan_card_Icon.svg"
+                  src="/phone.svg"
                   alt="Vercel Logo"
                   className={styles.vercelLogo}
-                  width={60}
-                  height={60}
+                  width={48}
+                  height={48}
                   priority
                 />
               </div>
@@ -121,11 +174,11 @@ export default function Home() {
             <div className={styles.FeatureCards}>
               <div>
                 <Image
-                  src="/scan_card_Icon.svg"
+                  src="/emergency.svg"
                   alt="Vercel Logo"
                   className={styles.vercelLogo}
-                  width={60}
-                  height={60}
+                  width={48}
+                  height={48}
                   priority
                 />
               </div>
@@ -141,11 +194,11 @@ export default function Home() {
             <div className={styles.FeatureCards}>
               <div>
                 <Image
-                  src="/scan_card_Icon.svg"
+                  src="/essay regi.svg"
                   alt="Vercel Logo"
                   className={styles.vercelLogo}
-                  width={60}
-                  height={60}
+                  width={48}
+                  height={48}
                   priority
                 />
               </div>
@@ -160,11 +213,11 @@ export default function Home() {
             <div className={styles.FeatureCards}>
               <div>
                 <Image
-                  src="/scan_card_Icon.svg"
+                  src="/dynamic conta.svg"
                   alt="Vercel Logo"
                   className={styles.vercelLogo}
-                  width={60}
-                  height={60}
+                  width={48}
+                  height={48}
                   priority
                 />
               </div>
@@ -179,11 +232,11 @@ export default function Home() {
             <div className={styles.FeatureCards}>
               <div>
                 <Image
-                  src="/scan_card_Icon.svg"
+                  src="/vehicle doc.svg"
                   alt="Vercel Logo"
                   className={styles.vercelLogo}
-                  width={60}
-                  height={60}
+                  width={48}
+                  height={48}
                   priority
                 />
               </div>
@@ -197,6 +250,24 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.forthPage}>
+        <div className={styles.description}>
+          <div>
+            <img
+              src="/logo_black.svg"
+              alt="Vercel Logo"
+              className={styles.TrakyoLogo}
+              // width={128}
+              // height={36}
+              // priority
+            />
+          </div>
+          <div className={styles.navManu}>
+            <span>About</span>
+            <span>Features</span>
+            <span>Quick Guide</span>
+            <span>Contact Us</span>
+          </div>
+        </div>
         <div className={styles.QuickGuideArea}>
           <div className={styles.QuickGuideContent}>
             <button className={styles.aboutButton}>Quick Guide</button>
@@ -212,24 +283,32 @@ export default function Home() {
                 priority
               />
             </div>
-            <div className={styles.DashDot}></div>
-            <div className={styles.Dashline}></div>
-            <div className={styles.DashDot}></div>
+            <Image
+              src="/dot_line.svg"
+              alt="Vercel Logo"
+              width={314}
+              height={14}
+              priority
+            />
             <div className={styles.QuickGuideIcon}>
               <Image
-                src="/scan_card_Icon.svg"
+                src="/car_icon.svg"
                 alt="Vercel Logo"
                 width={120}
                 height={120}
                 priority
               />
             </div>
-            <div className={styles.DashDot}></div>
-            <div className={styles.Dashline}></div>
-            <div className={styles.DashDot}></div>
+            <Image
+              src="/dot_line.svg"
+              alt="Vercel Logo"
+              width={314}
+              height={14}
+              priority
+            />
             <div className={styles.QuickGuideIcon}>
               <Image
-                src="/scan_card_Icon.svg"
+                src="/touch_icon.svg"
                 alt="Vercel Logo"
                 width={120}
                 height={120}
@@ -237,24 +316,77 @@ export default function Home() {
               />
             </div>
           </div>
+          <div className={styles.QuickContentText}>
+            <div className={styles.ContentTextArea}>
+              <div className={styles.QuickContentTextHeading}>Scan QR Code</div>
+              <div className={styles.ContentTextshow}>
+                Point and scan the QR code displayed on the vehicle. This
+                initiates the process and brings up the options available for
+                that specific vehicle.
+              </div>
+            </div>
+            <div className={styles.ContentTextArea}>
+              <div className={styles.QuickContentTextHeading}>
+                Select Scenario
+              </div>
+              <div className={styles.ContentTextshow}>
+                After scanning, you'll be presented with a list of scenarios to
+                choose from. These can include situations such as: No Parking,
+                Accident, Blocked Driveway, Suspicious Activity etc..
+              </div>
+            </div>
+            <div className={styles.ContentTextArea}>
+              <div className={styles.QuickContentTextHeading}>Take Action</div>
+              <div className={styles.ContentTextshow}>
+                <span>
+                  <span style={{ fontWeight: "bold" }}>Call Anonymously: </span>
+                  Contact the vehicle owner anonymously.Send Alert via
+                </span>
+                <br />
+                <br />
+
+                <span>
+                  <span style={{ fontWeight: "bold" }}>Message: </span>
+                  Opt to send an alert message directly to the vehicle owner.
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className={styles.fifthPage}>
+        <div className={styles.description}>
+          <div>
+            <img
+              src="/logo_black.svg"
+              alt="Vercel Logo"
+              className={styles.TrakyoLogo}
+            />
+          </div>
+          <div className={styles.navMenu}>
+            <span>About</span>
+            <span>Features</span>
+            <span>Quick Guide</span>
+            <span>Contact Us</span>
+          </div>
+        </div>
         <div className={styles.ContactusArea}>
           <div className={styles.ContactusContent}>
             <button className={styles.aboutButton}>Contact us</button>
           </div>
           <div className={styles.Contactus}>
             <div className={styles.ContactusShow}>
-              <h2 className={styles.ContactusGetIn}>Get in Touch with Trakyo</h2>
-              <div>
+              <h2 className={styles.ContactusGetIn}>
+                Get in Touch with Trakyo
+              </h2>
+              <div style={{ lineHeight: "24.43px", width: "390px" }}>
                 We are here to help! Whether you have a question, need support,
                 or want to give feedback, feel free to reach out to us.
               </div>
               <div className={styles.Contactuslist}>
                 <div className={styles.ContactDetails}>
                   <Image
-                    src="/Phone.svg"
+                    src="/Phone2.svg"
                     alt="Phone"
                     className={styles.vercelLogo}
                     width={24}
@@ -283,7 +415,7 @@ export default function Home() {
                     height={24}
                     priority
                   />
-                  <span>
+                  <span style={{ width: "395px" }}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Nunc vulputate libero et velit interdum, ac aliquet odio
                     mattis.
@@ -294,15 +426,15 @@ export default function Home() {
             <div className={styles.ContactusForm}>
               <div>
                 <span>Name</span>
-                <input className={styles.input1} />
+                <input type="text" className={styles.input1} />
               </div>
               <div>
                 <span>Mail</span>
-                <input className={styles.input1} />
+                <input type="email" className={styles.input1} />
               </div>
               <div>
                 <span>Message</span>
-                <input className={styles.input3} />
+                <input type="text" className={styles.input3} />
               </div>
               <div className={styles.sendButtonArea}>
                 <button className={styles.sendButton}>Send</button>
@@ -311,6 +443,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className={styles.footer}>
         <div>
           <div>
@@ -326,10 +459,50 @@ export default function Home() {
           <div className={styles.footerJoinAs}>
             <span>join us</span>
             <div className={styles.footerSocialsShow}>
-              <div className={styles.footerSocialArea}>.</div>
-              <div className={styles.footerSocialArea}>.</div>
-              <div className={styles.footerSocialArea}>.</div>
-              <div className={styles.footerSocialArea}>.</div>
+              <div className={styles.footerSocialArea}>
+                {" "}
+                <Image
+                  src="/facebook.svg"
+                  alt="Vercel Logo"
+                  className={styles.vercelLogo}
+                  width={40}
+                  height={40}
+                  priority
+                />
+              </div>
+              <div className={styles.footerSocialArea}>
+                {" "}
+                <Image
+                  src="/instagram.svg"
+                  alt="Vercel Logo"
+                  className={styles.vercelLogo}
+                  width={40}
+                  height={40}
+                  priority
+                />
+              </div>
+              <div className={styles.footerSocialArea}>
+                {" "}
+                <Image
+                  src="/x.svg"
+                  alt="Vercel Logo"
+                  className={styles.vercelLogo}
+                  width={40}
+                  height={40}
+                  priority
+                />
+              </div>
+              <div className={styles.footerSocialArea}>
+                {" "}
+                <Image
+                  src="/linkdin.svg"
+                  alt="Vercel Logo"
+                  className={styles.vercelLogo}
+                  width={40}
+                  height={40}
+                  priority
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -343,9 +516,29 @@ export default function Home() {
             </ul>
           </div>
           <div className={styles.footerDownloadArea}>
-            <span>Download our app on</span>
-            <button className={styles.AndroidButton}>Android</button>
-            <button className={styles.IOSButton}>IOS</button>
+            <span style={{ fontSize: "16px", fontWeight: 600 }}>
+              Download our app on
+            </span>
+            <button className={styles.AndroidButton}>
+              <Image
+                src="/playstore.svg"
+                alt="Vercel Logo"
+                // className={styles.vercelLogo}
+                width={24}
+                height={24}
+              />
+              Android
+            </button>
+            <button className={styles.IOSButton}>
+              <Image
+                src="/ios.svg"
+                alt="Vercel Logo"
+                // className={styles.vercelLogo}
+                width={24}
+                height={24}
+              />
+              <span style={{ marginTop: "5px" }}>IOS</span>
+            </button>
           </div>
         </div>
       </div>
