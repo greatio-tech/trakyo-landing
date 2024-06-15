@@ -81,7 +81,7 @@
   margin-top: 24px;
 }
 
-.AndroidButton {
+.androidButton {
   width: 210px;
   height: 56px;
   border-radius: 8px;
@@ -97,7 +97,7 @@
   gap: 10px;
 }
 
-.IOSButton {
+.iosButton {
   width: 210px;
   height: 56px;
   border-radius: 8px;
@@ -352,10 +352,6 @@
   flex-direction: column;
 }
 
-.ContactusForm {
-  width: 550px;
-}
-
 .Contactuslist {
   display: flex;
   flex-direction: column;
@@ -370,11 +366,17 @@
 
 .ContactusForm {
   height: 522px;
+  width: 550px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   margin-left: 130px;
+}
+
+.ContactusText {
+  line-height: 24.43px;
+  width: 390px;
 }
 
 .input1 {
@@ -470,4 +472,160 @@
   display: flex;
   gap: 26px;
   flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    flex-direction: column-reverse;
+  }
+  .ButtonArea {
+    justify-content: center;
+  }
+
+  .aboutContent {
+    margin-top: 45px;
+  }
+
+  .Contactus {
+    flex-direction: column;
+    height: 90vh;
+    width: 650px;
+  }
+
+  .ContactusForm {
+    margin-left: 0px;
+  }
+
+  .footer {
+    justify-content: center;
+    gap: 80px;
+  }
+
+  .footerMenu {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .main {
+    padding: 40px 60px;
+  }
+
+  .TrakyoLogo {
+    height: 24px;
+  }
+
+  .navManu {
+    display: none;
+  }
+
+  .center {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .centerContent {
+    width: 350px;
+  }
+
+  .centerHeading {
+    font-size: 24px;
+  }
+
+  .ContentsubHead {
+    font-size: 16px;
+  }
+
+  .landingLogo {
+    width: auto;
+    height: 416.06px;
+  }
+
+  .ButtonArea {
+    justify-content: center;
+  }
+
+  .secondPage {
+    padding: 40px 60px;
+  }
+
+  .aboutLanding {
+    height: 416.06px;
+  }
+
+  .aboutContent {
+    margin-top: 8px;
+  }
+
+  .aboutHeading {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .aboutText {
+    width: 100%;
+    margin-bottom: 144px;
+  }
+
+  .aboutButton {
+    margin-bottom: 90px;
+  }
+
+  .ThirdPage {
+    padding: 40px 60px;
+  }
+
+  .fifthPage {
+    padding: 40px 60px;
+  }
+
+  .Contactus {
+    flex-direction: column;
+    height: 90vh;
+    width: 535px;
+  }
+
+  .ContactusShow {
+    width: 400px;
+  }
+
+  .ContactusForm {
+    margin-left: 0px;
+  }
+
+  .ContactusText {
+    width: auto;
+  }
+
+  .ContactusTypeName {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input1 {
+    width: 400px;
+  }
+  .input3 {
+    width: 400px;
+  }
+
+  .footer {
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .footerMenu {
+    gap: 30px;
+  }
+
+  .androidButton {
+    width: 170px;
+
+  }
+  
+  .iosButton {
+    width: 170px;
+
+  }
+
 }

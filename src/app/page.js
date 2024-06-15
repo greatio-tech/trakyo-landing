@@ -33,7 +33,7 @@ export default function Home() {
               Simplify communication with a simple scan
             </div>
             <div className={styles.ButtonArea}>
-              <button className={styles.AndroidButton}>
+              <button className={styles.androidButton}>
                 <Image
                   src="/playstore.svg"
                   alt="Vercel Logo"
@@ -44,7 +44,7 @@ export default function Home() {
 
                 <span>Android</span>
               </button>
-              <button className={styles.IOSButton}>
+              <button className={styles.iosButton}>
                 <Image
                   src="/ios.svg"
                   alt="Vercel Logo"
@@ -363,7 +363,7 @@ export default function Home() {
               className={styles.TrakyoLogo}
             />
           </div>
-          <div className={styles.navMenu}>
+          <div className={styles.navManu}>
             <span>About</span>
             <span>Features</span>
             <span>Quick Guide</span>
@@ -379,7 +379,7 @@ export default function Home() {
               <h2 className={styles.ContactusGetIn}>
                 Get in Touch with Trakyo
               </h2>
-              <div style={{ lineHeight: "24.43px", width: "390px" }}>
+              <div className={styles.ContactusText}>
                 We are here to help! Whether you have a question, need support,
                 or want to give feedback, feel free to reach out to us.
               </div>
@@ -424,15 +424,15 @@ export default function Home() {
               </div>
             </div>
             <div className={styles.ContactusForm}>
-              <div>
+              <div className={styles.ContactusTypeName}>
                 <span>Name</span>
                 <input type="text" className={styles.input1} />
               </div>
-              <div>
+              <div className={styles.ContactusTypeName}>
                 <span>Mail</span>
                 <input type="email" className={styles.input1} />
               </div>
-              <div>
+              <div className={styles.ContactusTypeName}>
                 <span>Message</span>
                 <input type="text" className={styles.input3} />
               </div>
@@ -519,7 +519,7 @@ export default function Home() {
             <span style={{ fontSize: "16px", fontWeight: 600 }}>
               Download our app on
             </span>
-            <button className={styles.AndroidButton}>
+            <button className={styles.androidButton}>
               <Image
                 src="/playstore.svg"
                 alt="Vercel Logo"
@@ -529,7 +529,7 @@ export default function Home() {
               />
               Android
             </button>
-            <button className={styles.IOSButton}>
+            <button className={styles.iosButton}>
               <Image
                 src="/ios.svg"
                 alt="Vercel Logo"
