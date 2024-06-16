@@ -33,7 +33,7 @@ export default function Home() {
               Simplify communication with a simple scan
             </div>
             <div className={styles.ButtonArea}>
-              <button className={styles.androidButton}>
+              <div className={styles.androidButton}>
                 <Image
                   src="/playstore.svg"
                   alt="Vercel Logo"
@@ -43,8 +43,8 @@ export default function Home() {
                 />
 
                 <span>Android</span>
-              </button>
-              <button className={styles.iosButton}>
+              </div>
+              <div className={styles.iosButton}>
                 <Image
                   src="/ios.svg"
                   alt="Vercel Logo"
@@ -53,7 +53,7 @@ export default function Home() {
                   height={24}
                 />
                 <span style={{ marginTop: "5px" }}>IOS</span>
-              </button>
+              </div>
             </div>
           </div>
           <div>
@@ -519,7 +519,7 @@ export default function Home() {
             <span style={{ fontSize: "16px", fontWeight: 600 }}>
               Download our app on
             </span>
-            <button className={styles.androidButton}>
+            <div className={styles.androidButton}>
               <Image
                 src="/playstore.svg"
                 alt="Vercel Logo"
@@ -528,8 +528,8 @@ export default function Home() {
                 height={24}
               />
               Android
-            </button>
-            <button className={styles.iosButton}>
+            </div>
+            <div className={styles.iosButton}>
               <Image
                 src="/ios.svg"
                 alt="Vercel Logo"
@@ -538,7 +538,7 @@ export default function Home() {
                 height={24}
               />
               <span style={{ marginTop: "5px" }}>IOS</span>
-            </button>
+            </div>
           </div>
         </div>
       </div>
