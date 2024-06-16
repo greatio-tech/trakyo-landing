@@ -33,7 +33,7 @@ export default function Home() {
               Simplify communication with a simple scan
             </div>
             <div className={styles.ButtonArea}>
-              <div className={styles.androidButton}>
+              <button className={styles.androidButton}>
                 <Image
                   src="/playstore.svg"
                   alt="Vercel Logo"
@@ -43,8 +43,8 @@ export default function Home() {
                 />
 
                 <span>Android</span>
-              </div>
-              <div className={styles.iosButton}>
+              </button>
+              <button className={styles.iosButton}>
                 <Image
                   src="/ios.svg"
                   alt="Vercel Logo"
@@ -53,7 +53,7 @@ export default function Home() {
                   height={24}
                 />
                 <span style={{ marginTop: "5px" }}>IOS</span>
-              </div>
+              </button>
             </div>
           </div>
           <div>
@@ -519,26 +519,26 @@ export default function Home() {
             <span style={{ fontSize: "16px", fontWeight: 600 }}>
               Download our app on
             </span>
-            <div className={styles.androidButton}>
+            <button className={styles.androidButton}>
               <Image
                 src="/playstore.svg"
-                alt="img"
+                alt="Vercel Logo"
                 // className={styles.vercelLogo}
                 width={24}
                 height={24}
               />
               Android
-            </div>
-            <div className={styles.iosButton}>
+            </button>
+            <button className={styles.iosButton}>
               <Image
                 src="/ios.svg"
-                alt="img"
+                alt="Vercel Logo"
                 // className={styles.vercelLogo}
                 width={24}
                 height={24}
               />
               <span style={{ marginTop: "5px" }}>IOS</span>
-            </div>
+            </button>
           </div>
         </div>
       </div>

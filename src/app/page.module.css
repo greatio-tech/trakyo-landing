@@ -756,7 +756,7 @@
   .footer {
     justify-content: center;
     gap: 20px;
-    width: 330px;
+    height: 330px;
   }
 
   .footerMenu {
