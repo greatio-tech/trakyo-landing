@@ -739,6 +739,7 @@
   .ContactusTypeName {
     display: flex;
     flex-direction: column;
+    margin: 5px;
   }
 
   .input1 {
@@ -751,12 +752,12 @@
   .sendButton {
     width: 350px;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
 
   .footer {
     justify-content: center;
     gap: 20px;
-    height: 320px;
   }
 
   .footerMenu {
