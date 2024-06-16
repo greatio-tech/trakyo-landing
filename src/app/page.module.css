@@ -85,7 +85,6 @@
   width: 210px;
   height: 56px;
   border-radius: 8px;
-  opacity: 0px;
   background: #ffffff;
   border: none;
   color: #0461fe;
@@ -101,7 +100,6 @@
   width: 210px;
   height: 56px;
   border-radius: 8px;
-  opacity: 0px;
   background: #0461fe;
   border: none;
   color: #ffffff;
@@ -462,7 +460,7 @@
   gap: 10px;
 }
 
-.SocialLogos{
+.SocialLogos {
   height: 40px;
   width: 40px;
 }
@@ -758,6 +756,7 @@
   .footer {
     justify-content: center;
     gap: 20px;
+    width: 330px;
   }
 
   .footerMenu {
@@ -773,7 +772,7 @@
     height: 25px;
   }
 
-  .SocialLogos{
+  .SocialLogos {
     height: 25px;
     width: 25px;
   }

@@ -522,7 +522,7 @@ export default function Home() {
             <div className={styles.androidButton}>
               <Image
                 src="/playstore.svg"
-                alt="Vercel Logo"
+                alt="img"
                 // className={styles.vercelLogo}
                 width={24}
                 height={24}
@@ -532,7 +532,7 @@ export default function Home() {
             <div className={styles.iosButton}>
               <Image
                 src="/ios.svg"
-                alt="Vercel Logo"
+                alt="img"
                 // className={styles.vercelLogo}
                 width={24}
                 height={24}
