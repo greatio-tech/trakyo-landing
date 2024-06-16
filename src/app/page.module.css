@@ -721,7 +721,7 @@
   }
 
   .ContactusArea {
-    margin-top: 40px;
+    margin-top: 30px;
   }
 
   .ContactusShow {
@@ -756,7 +756,7 @@
   .footer {
     justify-content: center;
     gap: 20px;
-    height: 330px;
+    height: 320px;
   }
 
   .footerMenu {
