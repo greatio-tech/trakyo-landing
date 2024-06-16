@@ -461,46 +461,46 @@ export default function Home() {
             <div className={styles.footerSocialsShow}>
               <div className={styles.footerSocialArea}>
                 {" "}
-                <Image
+                <img
                   src="/facebook.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={40}
-                  height={40}
-                  priority
+                  className={styles.SocialLogos}
+                  // width={40}
+                  // height={40}
+                  // priority
                 />
               </div>
               <div className={styles.footerSocialArea}>
                 {" "}
-                <Image
+                <img
                   src="/instagram.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={40}
-                  height={40}
-                  priority
+                  className={styles.SocialLogos}
+                  // width={40}
+                  // height={40}
+                  // priority
                 />
               </div>
               <div className={styles.footerSocialArea}>
                 {" "}
-                <Image
+                <img
                   src="/x.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={40}
-                  height={40}
-                  priority
+                  className={styles.footerSocialArea}
+                  // width={40}
+                  // height={40}
+                  // priority
                 />
               </div>
               <div className={styles.footerSocialArea}>
                 {" "}
-                <Image
+                <img
                   src="/linkdin.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={40}
-                  height={40}
-                  priority
+                  className={styles.SocialLogos}
+                  // width={40}
+                  // height={40}
+                  // priority
                 />
               </div>
             </div>

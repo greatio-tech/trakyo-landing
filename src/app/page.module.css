@@ -462,6 +462,11 @@
   gap: 10px;
 }
 
+.SocialLogos{
+  height: 40px;
+  width: 40px;
+}
+
 .footerDownloadArea {
   display: flex;
   flex-direction: column;
@@ -620,12 +625,166 @@
 
   .androidButton {
     width: 170px;
-
   }
-  
+
   .iosButton {
     width: 170px;
+  }
+}
 
+@media (max-width: 490px) {
+  .main {
+    padding: 40px 60px;
   }
 
+  .TrakyoLogo {
+    height: 24px;
+  }
+
+  .navManu {
+    display: none;
+  }
+
+  .center {
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+  }
+
+  .centerContent {
+    width: 350px;
+  }
+
+  .centerHeading {
+    font-size: 24px;
+  }
+
+  .ContentsubHead {
+    font-size: 16px;
+  }
+
+  .landingLogo {
+    width: auto;
+    height: 416.06px;
+  }
+
+  .ButtonArea {
+    justify-content: center;
+  }
+
+  .secondPage {
+    padding: 40px 60px;
+  }
+
+  .aboutLanding {
+    height: 380px;
+    width: 352.04px;
+  }
+
+  .aboutContent {
+    margin-top: 35px;
+  }
+
+  .aboutHeading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .aboutText {
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 16px;
+  }
+
+  .aboutButton {
+    margin-bottom: 50px;
+    width: 140px;
+  }
+
+  .ThirdPage {
+    padding: 40px 60px;
+  }
+
+  .FeatureCards {
+    width: 380px;
+  }
+  .FeatureArea {
+    margin-top: 90px;
+  }
+
+  .fifthPage {
+    padding: 40px 60px;
+  }
+
+  .Contactus {
+    flex-direction: column;
+    height: 90vh;
+    width: 535px;
+    gap: 10px;
+  }
+
+  .ContactusArea {
+    margin-top: 50px;
+  }
+
+  .ContactusShow {
+    width: 350px;
+  }
+
+  .ContactusForm {
+    margin-left: 0px;
+  }
+
+  .ContactusText {
+    width: auto;
+  }
+
+  .ContactusTypeName {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input1 {
+    width: 350px;
+  }
+  .input3 {
+    width: 350px;
+  }
+
+  .sendButton {
+    width: 350px;
+    margin-top: 10px;
+  }
+
+  .footer {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footerMenu {
+    gap: 15px;
+  }
+
+  .footerMenuList {
+    gap: 16px;
+  }
+
+  .footerSocialArea {
+    width: 25px;
+    height: 25px;
+  }
+
+  .SocialLogos{
+    height: 25px;
+    width: 25px;
+  }
+
+  .androidButton {
+    width: 130px;
+    height: 45px;
+  }
+
+  .iosButton {
+    width: 130px;
+    height: 45px;
+  }
 }
