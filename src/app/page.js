@@ -12,6 +12,7 @@ export default function Home() {
   const Contact_Us = useRef(null);
 
   const scrollToSection = (elementRef) => {
+    console.log("heyy");
     window.scrollTo({
       top: elementRef.current.offsetTop,
       behavior: "smooth",
