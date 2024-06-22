@@ -1,10 +1,26 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./page.module.css";
+import { useRef } from "react";
 
 export default function Home() {
+  const Landing = useRef(null);
+  const About = useRef(null);
+  const Features = useRef(null);
+  const Quick_Guide = useRef(null);
+  const Contact_Us = useRef(null);
+
+  const scrollToSection = (elementRef) => {
+    window.scrollTo({
+      top: elementRef.current.offsetTop,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <main>
-      <div className={styles.main}>
+      <div className={styles.main} ref={Landing}>
         <div className={styles.description}>
           <div>
             <img
@@ -14,13 +30,16 @@ export default function Home() {
               // width={128}
               // height={36}
               // priority
+              onClick={() => scrollToSection(Landing)}
             />
           </div>
           <div className={styles.navManu}>
-            <span>About</span>
-            <span>Features</span>
-            <span>Quick Guide</span>
-            <span>Contact Us</span>
+            <span onClick={() => scrollToSection(About)}>About</span>
+            <span onClick={() => scrollToSection(Features)}>Features</span>
+            <span onClick={() => scrollToSection(Quick_Guide)}>
+              Quick Guide
+            </span>
+            <span onClick={() => scrollToSection(Contact_Us)}>Contact Us</span>
           </div>
         </div>
 
@@ -68,7 +87,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.secondPage}>
+      <div className={styles.secondPage} ref={About}>
         <div className={styles.aboutArea}>
           <div className={styles.description}>
             <div>
@@ -79,13 +98,18 @@ export default function Home() {
                 // width={128}
                 // height={36}
                 // priority
+                onClick={() => scrollToSection(Landing)}
               />
             </div>
             <div className={styles.navManu}>
-              <span>About</span>
-              <span>Features</span>
-              <span>Quick Guide</span>
-              <span>Contact Us</span>
+              <span onClick={() => scrollToSection(About)}>About</span>
+              <span onClick={() => scrollToSection(Features)}>Features</span>
+              <span onClick={() => scrollToSection(Quick_Guide)}>
+                Quick Guide
+              </span>
+              <span onClick={() => scrollToSection(Contact_Us)}>
+                Contact Us
+              </span>
             </div>
           </div>
           <div className={styles.aboutContent}>
@@ -113,7 +137,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.ThirdPage}>
+      <div className={styles.ThirdPage} ref={Features}>
         <div className={styles.description}>
           <div>
             <img
@@ -123,13 +147,16 @@ export default function Home() {
               // width={128}
               // height={36}
               // priority
+              onClick={() => scrollToSection(Landing)}
             />
           </div>
           <div className={styles.navManu}>
-            <span>About</span>
-            <span>Features</span>
-            <span>Quick Guide</span>
-            <span>Contact Us</span>
+            <span onClick={() => scrollToSection(About)}>About</span>
+            <span onClick={() => scrollToSection(Features)}>Features</span>
+            <span onClick={() => scrollToSection(Quick_Guide)}>
+              Quick Guide
+            </span>
+            <span onClick={() => scrollToSection(Contact_Us)}>Contact Us</span>
           </div>
         </div>
         <div className={styles.FeatureArea}>
@@ -249,7 +276,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.forthPage}>
+      <div className={styles.forthPage} ref={Quick_Guide}>
         <div className={styles.description}>
           <div>
             <img
@@ -259,13 +286,16 @@ export default function Home() {
               // width={128}
               // height={36}
               // priority
+              onClick={() => scrollToSection(Landing)}
             />
           </div>
           <div className={styles.navManu}>
-            <span>About</span>
-            <span>Features</span>
-            <span>Quick Guide</span>
-            <span>Contact Us</span>
+            <span onClick={() => scrollToSection(About)}>About</span>
+            <span onClick={() => scrollToSection(Features)}>Features</span>
+            <span onClick={() => scrollToSection(Quick_Guide)}>
+              Quick Guide
+            </span>
+            <span onClick={() => scrollToSection(Contact_Us)}>Contact Us</span>
           </div>
         </div>
         <div className={styles.QuickGuideArea}>
@@ -353,7 +383,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div>
+        <div className={styles.QuickGuideAreaMobile}>
           <div className={styles.QuickGuideContent}>
             <button className={styles.aboutButton}>Quick Guide</button>
             <div className={styles.aboutHowIt}>How it works?</div>
@@ -421,20 +451,23 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.fifthPage}>
+      <div className={styles.fifthPage} ref={Contact_Us}>
         <div className={styles.description}>
           <div>
             <img
               src="/logo_black.svg"
               alt="Vercel Logo"
               className={styles.TrakyoLogo}
+              onClick={() => scrollToSection(Landing)}
             />
           </div>
           <div className={styles.navManu}>
-            <span>About</span>
-            <span>Features</span>
-            <span>Quick Guide</span>
-            <span>Contact Us</span>
+            <span onClick={() => scrollToSection(About)}>About</span>
+            <span onClick={() => scrollToSection(Features)}>Features</span>
+            <span onClick={() => scrollToSection(Quick_Guide)}>
+              Quick Guide
+            </span>
+            <span onClick={() => scrollToSection(Contact_Us)}>Contact Us</span>
           </div>
         </div>
         <div className={styles.ContactusArea}>
@@ -520,7 +553,8 @@ export default function Home() {
               className={styles.vercelLogo}
               width={128}
               height={70}
-              priority
+              // priority
+              onClick={() => scrollToSection(Landing)}
             />
           </div>
           <div className={styles.footerJoinAs}>
