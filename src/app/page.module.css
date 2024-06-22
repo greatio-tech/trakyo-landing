@@ -734,7 +734,7 @@
     width: 380px;
   }
   .FeatureArea {
-    margin-top: 90px;
+    margin-top: 50px;
   }
 
   .aboutHowIt {
@@ -796,6 +796,7 @@
   .footer {
     justify-content: center;
     gap: 20px;
+    height: 240px;
   }
 
   .footerMenu {
