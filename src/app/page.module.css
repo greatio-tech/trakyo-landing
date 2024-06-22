@@ -578,6 +578,26 @@
     padding: 40px 60px;
   }
 
+  .forthPage {
+    padding: 40px 60px;
+  }
+
+  .QuickGuideIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 40px 0px;
+  }
+
+  .ContentTextshow {
+    width: 165px;
+  }
+
+  .aboutHowIt {
+    font-size: 26px;
+  }
+
   .fifthPage {
     padding: 40px 60px;
   }
@@ -627,6 +647,10 @@
 
   .iosButton {
     width: 170px;
+  }
+
+  .QuickGuideArea {
+    display: none;
   }
 }
 
@@ -709,6 +733,10 @@
     margin-top: 90px;
   }
 
+  .aboutHowIt {
+    font-size: 24px;
+  }
+
   .fifthPage {
     padding: 40px 60px;
   }
@@ -726,7 +754,7 @@
 
   .ContactusShow {
     width: 350px;
-    gap: 10pxF;
+    gap: 10px;
   }
 
   .ContactusForm {

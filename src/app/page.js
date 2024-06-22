@@ -353,6 +353,73 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <div>
+          <div className={styles.QuickGuideContent}>
+            <button className={styles.aboutButton}>Quick Guide</button>
+            <div className={styles.aboutHowIt}>How it works?</div>
+          </div>
+          <div className={styles.QuickGuideIcon}>
+            <Image
+              src="/scan_card_Icon.svg"
+              alt="Vercel Logo"
+              width={100}
+              height={100}
+              priority
+            />{" "}
+            <div className={styles.ContentTextArea}>
+              <div className={styles.QuickContentTextHeading}>Scan QR Code</div>
+              <div className={styles.ContentTextshow}>
+                Point and scan the QR code displayed on the vehicle. This
+                initiates the process and brings up the options available for
+                that specific vehicle.
+              </div>
+            </div>
+          </div>
+          <div className={styles.QuickGuideIcon}>
+            <div className={styles.ContentTextArea}>
+              <div className={styles.QuickContentTextHeading}>
+                Select Scenario
+              </div>
+              <div className={styles.ContentTextshow}>
+                After scanning, you'll be presented with a list of scenarios to
+                choose from. These can include situations such as: No Parking,
+                Accident, Blocked Driveway, Suspicious Activity etc..
+              </div>
+            </div>
+            <Image
+              src="/car_icon.svg"
+              alt="Vercel Logo"
+              width={100}
+              height={100}
+              priority
+            />
+          </div>
+          <div className={styles.QuickGuideIcon}>
+            <Image
+              src="/touch_icon.svg"
+              alt="Vercel Logo"
+              width={100}
+              height={100}
+              priority
+            />
+            <div className={styles.ContentTextArea}>
+              <div className={styles.QuickContentTextHeading}>Take Action</div>
+              <div className={styles.ContentTextshow}>
+                <span>
+                  <span style={{ fontWeight: "bold" }}>Call Anonymously: </span>
+                  Contact the vehicle owner anonymously.Send Alert via
+                </span>
+                <br />
+                <br />
+
+                <span>
+                  <span style={{ fontWeight: "bold" }}>Message: </span>
+                  Opt to send an alert message directly to the vehicle owner.
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className={styles.fifthPage}>
         <div className={styles.description}>
