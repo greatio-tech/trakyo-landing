@@ -42,6 +42,10 @@ export default function Home() {
             </span>
             <span onClick={() => scrollToSection(Contact_Us)}>Contact Us</span>
           </div>
+          <div className={styles.Toggle}>
+            {" "}
+            <img src="/MenuHamburger.svg" alt="img" />
+          </div>
         </div>
 
         <div className={styles.center}>
@@ -112,6 +116,10 @@ export default function Home() {
                 Contact Us
               </span>
             </div>
+            <div className={styles.Toggle}>
+              {" "}
+              <img src="/MenuHamburger.svg" alt="img" />
+            </div>
           </div>
           <div className={styles.aboutContent}>
             <div>
@@ -158,6 +166,10 @@ export default function Home() {
               Quick Guide
             </span>
             <span onClick={() => scrollToSection(Contact_Us)}>Contact Us</span>
+          </div>
+          <div className={styles.Toggle}>
+            {" "}
+            <img src="/MenuHamburger.svg" alt="img" />
           </div>
         </div>
         <div className={styles.FeatureArea}>
@@ -297,6 +309,9 @@ export default function Home() {
               Quick Guide
             </span>
             <span onClick={() => scrollToSection(Contact_Us)}>Contact Us</span>
+          </div>
+          <div className={styles.Toggle}>
+            <img src="/MenuHamburger.svg" alt="img" />
           </div>
         </div>
         <div className={styles.QuickGuideArea}>
@@ -469,6 +484,10 @@ export default function Home() {
               Quick Guide
             </span>
             <span onClick={() => scrollToSection(Contact_Us)}>Contact Us</span>
+          </div>
+          <div className={styles.Toggle}>
+            {" "}
+            <img src="/MenuHamburger.svg" alt="img" />
           </div>
         </div>
         <div className={styles.ContactusArea}>

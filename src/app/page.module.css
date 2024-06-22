@@ -11,10 +11,8 @@
   justify-content: space-between;
   align-items: center;
   font-size: 0.85rem;
-  /* max-width: var(--max-width); */
   width: 100%;
   z-index: 2;
-  /* font-family: var(--font-mono); */
 }
 
 .description a {
@@ -486,6 +484,10 @@
   display: none;
 }
 
+.Toggle {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .center {
     flex-direction: column-reverse;
@@ -672,6 +674,9 @@
   }
   .footer {
     display: none;
+  }
+  .Toggle {
+    display: flex;
   }
 }
 
