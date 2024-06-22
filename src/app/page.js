@@ -643,6 +643,109 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className={styles.footerMobile}>
+        <div>
+          <div className={styles.footerIconMobile}>
+            <Image
+              src="/logo_black.svg"
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={128}
+              height={70}
+              // priority
+              onClick={() => scrollToSection(Landing)}
+            />
+          </div>
+          <div className={styles.footerJoinAsMobile}>
+            <span>join us:</span>
+            <div className={styles.footerSocialsShow}>
+              <div className={styles.footerSocialArea}>
+                {" "}
+                <img
+                  src="/facebook.svg"
+                  alt="Vercel Logo"
+                  className={styles.SocialLogos}
+                  // width={40}
+                  // height={40}
+                  // priority
+                />
+              </div>
+              <div className={styles.footerSocialArea}>
+                {" "}
+                <img
+                  src="/instagram.svg"
+                  alt="Vercel Logo"
+                  className={styles.SocialLogos}
+                  // width={40}
+                  // height={40}
+                  // priority
+                />
+              </div>
+              <div className={styles.footerSocialArea}>
+                {" "}
+                <img
+                  src="/x.svg"
+                  alt="Vercel Logo"
+                  className={styles.footerSocialArea}
+                  // width={40}
+                  // height={40}
+                  // priority
+                />
+              </div>
+              <div className={styles.footerSocialArea}>
+                {" "}
+                <img
+                  src="/linkdin.svg"
+                  alt="Vercel Logo"
+                  className={styles.SocialLogos}
+                  // width={40}
+                  // height={40}
+                  // priority
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className={styles.footerMenuMobile}>
+          <div>
+            <ul className={styles.footerMenuListMobile}>
+              <li>About</li>
+              <li>Features</li>
+              <li>Quick Guide</li>
+              <li>Contact Us</li>
+            </ul>
+          </div>
+          <div className={styles.footerDownloadAreaMobile}>
+            <div>
+              <span style={{ fontSize: "16px", fontWeight: 600 }}>
+                Download our app on:
+              </span>
+            </div>
+            <div className={styles.ButtonArea}>
+              <button className={styles.androidButton}>
+                <Image
+                  src="/playstore.svg"
+                  alt="Vercel Logo"
+                  // className={styles.vercelLogo}
+                  width={24}
+                  height={24}
+                />
+                Android
+              </button>
+              <button className={styles.iosButton}>
+                <Image
+                  src="/ios.svg"
+                  alt="Vercel Logo"
+                  // className={styles.vercelLogo}
+                  width={24}
+                  height={24}
+                />
+                <span style={{ marginTop: "5px" }}>IOS</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }

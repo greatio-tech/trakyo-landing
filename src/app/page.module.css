@@ -481,6 +481,10 @@
   display: none;
 }
 
+.footerMobile {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .center {
     flex-direction: column-reverse;
@@ -586,6 +590,11 @@
     padding: 40px 60px;
   }
 
+  .QuickGuideAreaMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
   .QuickGuideIcon {
     display: flex;
     justify-content: center;
@@ -658,6 +667,9 @@
   }
 
   .QuickGuideArea {
+    display: none;
+  }
+  .footer {
     display: none;
   }
 }
@@ -745,6 +757,11 @@
     font-size: 24px;
   }
 
+  .QuickGuideAreaMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
   .fifthPage {
     padding: 40px 60px;
   }
@@ -824,10 +841,55 @@
   .androidButton {
     width: 130px;
     height: 45px;
+    background: #e5e5e5;
   }
 
   .iosButton {
     width: 130px;
     height: 45px;
+  }
+  .footer {
+    display: none;
+  }
+  .footerMobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 2rem 2rem;
+  }
+  .footerIconMobile {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerMobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .footerJoinAsMobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .footerMenuMobile {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footerMenuListMobile {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  .footerDownloadAreaMobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ButtonArea {
+    display: flex;
   }
 }
