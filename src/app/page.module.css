@@ -590,6 +590,10 @@
     margin: 40px 0px;
   }
 
+  .QuickGuideContent {
+    margin-top: 50px;
+  }
+
   .ContentTextshow {
     width: 165px;
   }
@@ -698,8 +702,8 @@
   }
 
   .aboutLanding {
-    height: 380px;
-    width: 352.04px;
+    height: 330px;
+    width: 320px;
   }
 
   .aboutContent {
@@ -718,7 +722,7 @@
   }
 
   .aboutButton {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     width: 140px;
   }
 
@@ -754,6 +758,7 @@
 
   .ContactusShow {
     width: 350px;
+    height: 400px;
     gap: 10px;
   }
 
@@ -765,6 +770,10 @@
     width: auto;
   }
 
+  .Contactuslist {
+    gap: 10px;
+  }
+
   .ContactusTypeName {
     display: flex;
     flex-direction: column;
@@ -772,9 +781,11 @@
 
   .input1 {
     width: 350px;
+    height: 50px;
   }
   .input3 {
     width: 350px;
+    height: 100px;
   }
 
   .sendButton {
