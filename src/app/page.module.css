@@ -533,6 +533,14 @@
 }
 
 @media (max-width: 1024px) {
+  .landingLogo {
+    height: 600px;
+  }
+
+  .navManu {
+    gap: 20px;
+  }
+
   .center {
     flex-direction: column-reverse;
   }
@@ -542,6 +550,35 @@
 
   .aboutContent {
     margin-top: 45px;
+  }
+
+  .QuickGuideArea {
+    display: none;
+  }
+
+  .QuickGuideAreaMobile {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .QuickGuideIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin: 40px 0px;
+  }
+
+  .QuickGuideContent {
+    margin-top: 50px;
+  }
+
+  .ContentTextshow {
+    width: 165px;
+  }
+
+  .aboutHowIt {
+    font-size: 26px;
   }
 
   .Contactus {
@@ -783,7 +820,7 @@
 
   .aboutText {
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 70px;
     font-size: 12px;
     line-height: 20.49px;
   }
