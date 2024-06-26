@@ -513,7 +513,10 @@
     height: 360px;
   }
   .aboutContent {
-    margin-top: 80px;
+    margin-top: 50px;
+  }
+  .aboutText {
+    margin-bottom: 50px;
   }
   .FeatureArea {
     margin-top: 80px;
