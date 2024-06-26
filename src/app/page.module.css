@@ -489,6 +489,49 @@
   display: none;
 }
 
+@media (max-width: 1440px) {
+  .main {
+    padding: 40px 100px;
+  }
+  .secondPage {
+    padding: 40px 100px;
+  }
+  .ThirdPage {
+    padding: 40px 100px;
+  }
+  .forthPage {
+    padding: 40px 100px;
+  }
+  .fifthPage {
+    padding: 40px 100px;
+  }
+
+  .footer {
+    padding: 1rem 6rem;
+  }
+  .aboutLanding {
+    height: 420px;
+  }
+  .aboutContent {
+    margin-top: 80px;
+  }
+  .FeatureArea {
+    margin-top: 80px;
+  }
+  .QuickContentText {
+    width: 100%;
+  }
+  .QuickGuideContent {
+    margin-top: 80px;
+  }
+  .QuickGuideArea {
+    justify-content: center;
+  }
+  .ContactusArea {
+    margin-top: 80px;
+  }
+}
+
 @media (max-width: 1024px) {
   .center {
     flex-direction: column-reverse;
