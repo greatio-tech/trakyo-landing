@@ -222,6 +222,7 @@
   margin-top: 16px;
   margin-bottom: 12px;
 }
+
 .cardText {
   font-size: 16px;
 }
@@ -724,8 +725,8 @@
   }
 
   .aboutLanding {
-    height: 330px;
-    width: 320px;
+    height: 250px;
+    width: 250px;
   }
 
   .aboutContent {
@@ -740,7 +741,8 @@
   .aboutText {
     width: 100%;
     margin-bottom: 25px;
-    font-size: 16px;
+    font-size: 12px;
+    line-height: 20.49px;
   }
 
   .aboutButton {
@@ -753,10 +755,14 @@
   }
 
   .FeatureCards {
-    width: 380px;
+    width: 340px;
   }
   .FeatureArea {
     margin-top: 50px;
+  }
+
+  .cardText {
+    font-size: 14px;
   }
 
   .aboutHowIt {
@@ -796,6 +802,8 @@
 
   .ContactusText {
     width: auto;
+    font-size: 14px;
+    line-height: 20.43px;
   }
 
   .Contactuslist {
@@ -805,6 +813,11 @@
   .ContactusTypeName {
     display: flex;
     flex-direction: column;
+  }
+
+  .ContactDetails {
+    font-size: 14px;
+    line-height: 20.43px;
   }
 
   .input1 {
@@ -889,7 +902,7 @@
   .footerMenuListMobile {
     display: flex;
     justify-content: space-evenly;
-    gap: 10px;
+    gap: 7px;
   }
   .footerDownloadAreaMobile {
     display: flex;

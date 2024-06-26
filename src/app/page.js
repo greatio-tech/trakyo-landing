@@ -677,7 +677,6 @@ export default function Home() {
             />
           </div>
           <div className={styles.footerJoinAsMobile}>
-            <span>join us:</span>
             <div className={styles.footerSocialsShow}>
               <div className={styles.footerSocialArea}>
                 {" "}
