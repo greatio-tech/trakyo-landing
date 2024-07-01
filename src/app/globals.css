@@ -4,8 +4,19 @@
   margin: 0;
 }
 
-html,
+/* html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+} */
+
+html {
+  max-width: 100vw;
+  /* overflow-y: scroll; */
+  scroll-snap-type: y mandatory;
+}
+
+.mainSection {
+  scroll-snap-align: center;
+  /* scroll-behavior: smooth; */
+  scroll-snap-stop: normal;
 }

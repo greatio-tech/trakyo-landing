@@ -20,8 +20,8 @@ export default function Home() {
   };
 
   return (
-    <main>
-      <div className={styles.main} ref={Landing}>
+    <main className={`${styles.mainDiv} snapContainer`}>
+      <div className={`${styles.main} mainSection`} ref={Landing}>
         <div className={styles.description}>
           <div>
             <img
@@ -92,7 +92,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.secondPage} ref={About}>
+      <div className={`${styles.secondPage} mainSection`} ref={About}>
         <div className={styles.aboutArea}>
           <div className={styles.description}>
             <div>
@@ -146,7 +146,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.ThirdPage} ref={Features}>
+      <div className={`${styles.ThirdPage} mainSection`} ref={Features}>
         <div className={styles.description}>
           <div>
             <img
@@ -289,7 +289,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.forthPage} ref={Quick_Guide}>
+      <div className={`${styles.forthPage} mainSection`} ref={Quick_Guide}>
         <div className={styles.description}>
           <div>
             <img
@@ -467,7 +467,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className={styles.fifthPage} ref={Contact_Us}>
+      <div className={`${styles.fifthPage} mainSection`} ref={Contact_Us}>
         <div className={styles.description}>
           <div>
             <img
@@ -564,7 +564,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.footer}>
+      <div className={`${styles.footer} mainSection`}>
         <div>
           <div>
             <Image
