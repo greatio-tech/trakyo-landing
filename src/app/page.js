@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import styles from "./page.module.css";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 export default function Home() {
   const Landing = useRef(null);
@@ -11,23 +12,63 @@ export default function Home() {
   const Quick_Guide = useRef(null);
   const Contact_Us = useRef(null);
 
+  const Mobile = useMediaQuery({ query: "(max-width: 640px)" });
+
   const scrollToSection = (elementRef) => {
-    console.log("heyy");
     window.scrollTo({
       top: elementRef.current.offsetTop,
       behavior: "smooth",
     });
   };
 
+  const [bgColor, setBgColor] = useState("#000c1700");
+  const [textColor, setTextColor] = useState("#FFFFFF");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scroll = window.scrollY;
+      if (scroll > 500) {
+        setBgColor("#f2f2f200");
+        setTextColor("#000");
+      } else {
+        setBgColor("#000c1700");
+        setTextColor("#FFFFFF");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <main className={`${styles.mainDiv} snapContainer`}>
-      <div className={`${styles.main} mainSection`} ref={Landing}>
-        <div className={styles.description}>
+    <main
+      className={
+        Mobile ? `${styles.mainDiv}` : `${styles.mainDiv} snapContainer`
+      }
+    >
+      <div
+        className={Mobile ? `${styles.main}` : `${styles.main} mainSection`}
+        ref={Landing}
+      >
+        <div
+          className={styles.description}
+          style={{ background: `${bgColor}`, color: `${textColor}` }}
+        >
           <div>
             <img
-              src="/Trakyo_logo_white.svg"
+              src={
+                textColor !== "#FFFFFF"
+                  ? "/Trakyo_logo.svg"
+                  : "/Trakyo_logo_white.svg"
+              }
               alt="Vercel Logo"
-              className={styles.TrakyoLogo}
+              className={
+                textColor == "#FFFFFF" ? styles.TrakyoLogo : styles.TrakyoLogo2
+              }
               // width={128}
               // height={36}
               // priority
@@ -94,7 +135,7 @@ export default function Home() {
       </div>
       <div className={`${styles.secondPage} mainSection`} ref={About}>
         <div className={styles.aboutArea}>
-          <div className={styles.description}>
+          {/* <div className={styles.description}>
             <div>
               <img
                 src="/logo_black.svg"
@@ -120,7 +161,7 @@ export default function Home() {
               {" "}
               <img src="/MenuHamburger.svg" alt="img" />
             </div>
-          </div>
+          </div> */}
           <div className={styles.aboutContent}>
             <div>
               <button className={styles.aboutButton}>About</button>
@@ -147,7 +188,7 @@ export default function Home() {
         </div>
       </div>
       <div className={`${styles.ThirdPage} mainSection`} ref={Features}>
-        <div className={styles.description}>
+        {/* <div className={styles.description}>
           <div>
             <img
               src="/logo_black.svg"
@@ -171,7 +212,7 @@ export default function Home() {
             {" "}
             <img src="/MenuHamburger.svg" alt="img" />
           </div>
-        </div>
+        </div> */}
         <div className={styles.FeatureArea}>
           <div className={styles.FeatureContent}>
             <button className={styles.aboutButton}>Feature</button>
@@ -290,7 +331,7 @@ export default function Home() {
         </div>
       </div>
       <div className={`${styles.forthPage} mainSection`} ref={Quick_Guide}>
-        <div className={styles.description}>
+        {/* <div className={styles.description}>
           <div>
             <img
               src="/logo_black.svg"
@@ -313,7 +354,7 @@ export default function Home() {
           <div className={styles.Toggle}>
             <img src="/MenuHamburger.svg" alt="img" />
           </div>
-        </div>
+        </div> */}
         <div className={styles.QuickGuideArea}>
           <div className={styles.QuickGuideContent}>
             <button className={styles.aboutButton}>Quick Guide</button>
@@ -327,6 +368,7 @@ export default function Home() {
                 width={120}
                 height={120}
                 priority
+                className={styles.QuickGuideIconImage}
               />
             </div>
             <Image
@@ -343,6 +385,7 @@ export default function Home() {
                 width={120}
                 height={120}
                 priority
+                className={styles.QuickGuideIconImage}
               />
             </div>
             <Image
@@ -359,6 +402,7 @@ export default function Home() {
                 width={120}
                 height={120}
                 priority
+                className={styles.QuickGuideIconImage}
               />
             </div>
           </div>
@@ -468,7 +512,7 @@ export default function Home() {
         </div>
       </div>
       <div className={`${styles.fifthPage} mainSection`} ref={Contact_Us}>
-        <div className={styles.description}>
+        {/* <div className={styles.description}>
           <div>
             <img
               src="/logo_black.svg"
@@ -489,7 +533,7 @@ export default function Home() {
             {" "}
             <img src="/MenuHamburger.svg" alt="img" />
           </div>
-        </div>
+        </div> */}
         <div className={styles.ContactusArea}>
           <div className={styles.ContactusContent}>
             <button className={styles.aboutButton}>Contact us</button>
@@ -637,10 +681,10 @@ export default function Home() {
             </ul>
           </div>
           <div className={styles.footerDownloadArea}>
-            <span style={{ fontSize: "16px", fontWeight: 600 }}>
+            <span className={styles.footerDownloadText}>
               Download our app on
             </span>
-            <button className={styles.androidButton}>
+            <button className={styles.androidButton2}>
               <Image
                 src="/playstore.svg"
                 alt="Vercel Logo"
@@ -650,7 +694,7 @@ export default function Home() {
               />
               Android
             </button>
-            <button className={styles.iosButton}>
+            <button className={styles.iosButton2}>
               <Image
                 src="/ios.svg"
                 alt="Vercel Logo"

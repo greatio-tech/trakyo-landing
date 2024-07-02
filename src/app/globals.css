@@ -15,6 +15,7 @@ html {
   scroll-snap-type: y mandatory;
 }
 
+
 .mainSection {
   scroll-snap-align: center;
   /* scroll-behavior: smooth; */

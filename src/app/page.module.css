@@ -11,9 +11,9 @@
   justify-content: space-between;
   align-items: center;
   font-size: 0.85rem;
-  width: 100%;
+  width: 84%;
   z-index: 2;
-  /* position: fixed; */
+  position: fixed;
 }
 
 .description a {
@@ -97,6 +97,35 @@
 }
 
 .iosButton {
+  width: 210px;
+  height: 56px;
+  border-radius: 8px;
+  background: #0461fe;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.androidButton2 {
+  width: 210px;
+  height: 56px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: none;
+  color: #0461fe;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.iosButton2 {
   width: 210px;
   height: 56px;
   border-radius: 8px;
@@ -255,7 +284,7 @@
   height: 100px;
 }
 
-.Dashline {
+/* .Dashline {
   border: 1px dashed #0461fe;
   width: 278px;
   height: 0px;
@@ -267,6 +296,11 @@
   width: 14px;
   height: 14px;
   border-radius: 50%;
+} */
+
+.QuickGuideIconImage {
+  width: 120px;
+  height: 120px;
 }
 
 .QuickContentTextHeading {
@@ -472,6 +506,11 @@
   gap: 26px;
 }
 
+.footerDownloadText {
+  font-size: 16px;
+  font-weight: 600;
+}
+
 .footerMenuList {
   display: flex;
   gap: 26px;
@@ -490,49 +529,162 @@
   display: none;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1536px) {
   .main {
-    padding: 40px 100px;
+    padding: 40px 118px;
   }
-  .secondPage {
-    padding: 40px 100px;
+  .TrakyoLogo {
+    height: 36;
   }
-  .ThirdPage {
-    padding: 40px 100px;
+  .TrakyoLogo2 {
+    height: 90.11px;
   }
-  .forthPage {
-    padding: 40px 100px;
+  .landingLogo {
+    height: 565.93px;
   }
-  .fifthPage {
-    padding: 40px 100px;
+  .navManu {
+    font-size: 11.85px;
+  }
+  .centerHeading {
+    font-size: 35.56px;
+  }
+  .ContentsubHead {
+    font-size: 17.78px;
+  }
+  .androidButton {
+    width: 156.3px;
+    height: 41.48px;
   }
 
-  .footer {
-    padding: 1rem 6rem;
+  .iosButton {
+    width: 156.3px;
+    height: 41.48px;
+  }
+
+  .androidButton2 {
+    width: 155.94px;
+    height: 41.39px;
+  }
+
+  .iosButton2 {
+    width: 155.94px;
+    height: 41.39px;
+  }
+  .secondPage {
+    padding: 40px 118px;
+  }
+  .aboutHeading {
+    font-size: 23.7px;
+  }
+  .aboutText {
+    font-size: 13.33px;
+    margin-bottom: 40px;
   }
   .aboutLanding {
-    height: 440px;
+    height: 404.44px;
   }
   .aboutContent {
     margin-top: 40px;
   }
-  .aboutText {
-    margin-bottom: 40px;
+  .aboutButton {
+    font-family: Roboto;
+    font-size: 11.85px;
+    width: 67.56px;
+    height: 31.78px;
+    padding: 0px;
+  }
+  .ThirdPage {
+    padding: 40px 118px;
+  }
+  .FeatureCards {
+    width: 379.26px;
+    height: 176.3px;
   }
   .FeatureArea {
     margin-top: 80px;
   }
-  .QuickContentText {
-    width: 100%;
+  .cardText {
+    font-size: 11.85px;
   }
+  .cardHeading {
+    font-size: 13.33px;
+  }
+  .aboutHowIt {
+    font-size: 23.7px;
+  }
+  .forthPage {
+    padding: 40px 118px;
+  }
+  .QuickContentTextHeading {
+    font-size: 13.33px;
+  }
+  .ContentTextshow {
+    font-size: 11.85px;
+  }
+  .QuickGuideIconImage {
+    width: 88.89px;
+    height: 88.89px;
+  }
+
+  .QuickContentText {
+    width: 92%;
+  }
+
   .QuickGuideContent {
     margin-top: 80px;
   }
   .QuickGuideArea {
     justify-content: center;
   }
+
+  .fifthPage {
+    padding: 40px 118px;
+  }
+
+  .Contactus {
+    width: 981.47px;
+    height: 415.35px;
+  }
+
+  .ContactusShow {
+    width: 415.35px;
+    height: 385.79px;
+  }
+
+  .ContactusForm {
+    width: 415.35px;
+    height: 385.79px;
+    margin-left: 70px;
+  }
+
   .ContactusArea {
     margin-top: 80px;
+  }
+
+  .input1 {
+    width: 402.79px;
+    height: 41.39px;
+  }
+  .input3 {
+    width: 402.79px;
+    height: 99.03px;
+  }
+
+  .sendButton {
+    width: 427px;
+    height: 41.39px;
+  }
+
+  .footer {
+    padding: 1rem 6rem;
+    height: 283.8px;
+  }
+
+  .footer ul {
+    font-size: 11.83px;
+  }
+  .footerDownloadText {
+    font-size: 11.83px;
   }
 }
 
@@ -613,9 +765,15 @@
   .TrakyoLogo {
     height: 24px;
   }
-
+  .TrakyoLogo2 {
+    height: 70.11px;
+  }
   .navManu {
     display: none;
+  }
+
+  .description {
+    width: 70%;
   }
 
   .center {
@@ -710,7 +868,7 @@
   .Contactus {
     flex-direction: column;
     height: 90vh;
-    width: 535px;
+    width: 370px;
   }
 
   .ContactusShow {
@@ -719,6 +877,7 @@
 
   .ContactusForm {
     margin-left: 0px;
+    width: 370.35px;
   }
 
   .ContactusText {
@@ -865,7 +1024,7 @@
   .Contactus {
     flex-direction: column;
     height: 100vh;
-    width: 535px;
+    width: 370px;
     gap: 10px;
   }
 
