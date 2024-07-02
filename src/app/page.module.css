@@ -1,3 +1,6 @@
+.mainDiv {
+  overflow-y: hidden;
+}
 .main {
   padding: 40px 160px;
   min-height: 100vh;

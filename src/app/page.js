@@ -12,6 +12,10 @@ export default function Home() {
   const Quick_Guide = useRef(null);
   const Contact_Us = useRef(null);
 
+  const [bgColor, setBgColor] = useState("#000c1700");
+  const [textColor, setTextColor] = useState("#FFFFFF");
+  const [menuHamburger, setMenuHamburger] = useState(false);
+
   const Mobile = useMediaQuery({ query: "(max-width: 640px)" });
 
   const scrollToSection = (elementRef) => {
@@ -20,9 +24,6 @@ export default function Home() {
       behavior: "smooth",
     });
   };
-
-  const [bgColor, setBgColor] = useState("#000c1700");
-  const [textColor, setTextColor] = useState("#FFFFFF");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -44,10 +45,20 @@ export default function Home() {
     };
   }, []);
 
+  const handleMenuOpen = () => {
+    setMenuHamburger(true);
+  };
+
+  const handleMenuClose = () => {
+    setMenuHamburger(false);
+  };
+
   return (
     <main
       className={
-        Mobile ? `${styles.mainDiv}` : `${styles.mainDiv} snapContainer`
+        menuHamburger && Mobile
+          ? `${styles.mainDiv}`
+          : `${styles.mainDiv} snapContainer`
       }
     >
       <div
@@ -83,9 +94,13 @@ export default function Home() {
             </span>
             <span onClick={() => scrollToSection(Contact_Us)}>Contact Us</span>
           </div>
-          <div className={styles.Toggle}>
+          <div className={styles.Toggle} onClick={handleMenuOpen}>
             {" "}
-            <img src="/MenuHamburger.svg" alt="img" />
+            {textColor == "#FFFFFF" ? (
+              <img src="/MenuHamburger.svg" alt="img" />
+            ) : (
+              <img src="/MenuHamburgerBlack.svg" alt="img" />
+            )}
           </div>
         </div>
 
@@ -809,6 +824,73 @@ export default function Home() {
           </div>
         </div>
       </div>
+      {menuHamburger && (
+        <div
+          style={{
+            position: "fixed",
+            top: 0,
+            right: 0,
+            height: "100vh",
+            width: "90%",
+            background: "#fff",
+            zIndex: "1000",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <Image
+            src="/closeblack.svg"
+            alt="Vercel Logo"
+            className={styles.vercelLogo}
+            width={20}
+            height={20}
+            style={{ margin: "20px" }}
+            onClick={handleMenuClose}
+          />
+          <ul style={{ listStyle: "none", fontWeight: 600 }}>
+            <li style={{ margin: "50px", textAlign: "center" }}>
+              <Image
+                src="/Trakyo_logo.svg"
+                alt="Vercel Logo"
+                className={styles.vercelLogo}
+                width={128}
+                height={70}
+                // priority
+                onClick={() => scrollToSection(Landing)}
+              />
+            </li>
+
+            <li
+              style={{
+                margin: "50px",
+                textAlign: "center",
+                textAlign: "center",
+              }}
+              onClick={() => scrollToSection(About)}
+            >
+              About
+            </li>
+            <li
+              style={{ margin: "50px", textAlign: "center" }}
+              onClick={() => scrollToSection(Features)}
+            >
+              Features
+            </li>
+            <li
+              style={{ margin: "50px", textAlign: "center" }}
+              onClick={() => scrollToSection(Quick_Guide)}
+            >
+              Quick Guide
+            </li>
+            <li
+              style={{ margin: "50px", textAlign: "center" }}
+              onClick={() => scrollToSection(Contact_Us)}
+            >
+              Contact Us
+            </li>
+          </ul>
+        </div>
+      )}
     </main>
   );
 }
