@@ -843,22 +843,24 @@ export default function Home() {
             top: 0,
             right: 0,
             height: "100vh",
-            width: "90%",
+            width: "100%",
             background: "#fff",
             zIndex: "1000",
             display: "flex",
             flexDirection: "column",
           }}
         >
-          <Image
-            src="/closeblack.svg"
-            alt="Vercel Logo"
-            className={styles.vercelLogo}
-            width={20}
-            height={20}
-            style={{ margin: "20px" }}
-            onClick={handleMenuClose}
-          />
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <Image
+              src="/closeblack.svg"
+              alt="Vercel Logo"
+              className={styles.vercelLogo}
+              width={20}
+              height={20}
+              style={{ margin: "20px" }}
+              onClick={handleMenuClose}
+            />
+          </div>
           <ul style={{ listStyle: "none", fontWeight: 600 }}>
             <li style={{ margin: "50px", textAlign: "center" }}>
               <Image
