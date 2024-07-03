@@ -235,13 +235,13 @@ export default function Home() {
           <div className={styles.FeatureCardsArea}>
             <div className={styles.FeatureCards}>
               <div>
-                <Image
+                <img
                   src="/scanner.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={48}
-                  height={48}
-                  priority
+                  className={styles.FeatureCardsImg}
+                  // width={48}
+                  // height={48}
+                  // priority
                 />
               </div>
               <div className={styles.cardHeading}>Effortless QR Scanning</div>
@@ -252,13 +252,13 @@ export default function Home() {
             </div>
             <div className={styles.FeatureCards}>
               <div>
-                <Image
+                <img
                   src="/phone.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={48}
-                  height={48}
-                  priority
+                  className={styles.FeatureCardsImg}
+                  // width={48}
+                  // height={48}
+                  // priority
                 />
               </div>
               <div className={styles.cardHeading}>Anonymous Calling</div>
@@ -269,13 +269,13 @@ export default function Home() {
             </div>
             <div className={styles.FeatureCards}>
               <div>
-                <Image
+                <img
                   src="/emergency.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={48}
-                  height={48}
-                  priority
+                  className={styles.FeatureCardsImg}
+                  // width={48}
+                  // height={48}
+                  // priority
                 />
               </div>
               <div className={styles.cardHeading}>
@@ -289,13 +289,13 @@ export default function Home() {
             </div>
             <div className={styles.FeatureCards}>
               <div>
-                <Image
+                <img
                   src="/essay regi.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={48}
-                  height={48}
-                  priority
+                  className={styles.FeatureCardsImg}
+                  // width={48}
+                  // height={48}
+                  // priority
                 />
               </div>
               <div className={styles.cardHeading}>
@@ -308,13 +308,13 @@ export default function Home() {
             </div>
             <div className={styles.FeatureCards}>
               <div>
-                <Image
+                <img
                   src="/dynamic conta.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={48}
-                  height={48}
-                  priority
+                  className={styles.FeatureCardsImg}
+                  // width={48}
+                  // height={48}
+                  // priority
                 />
               </div>
               <div className={styles.cardHeading}>
@@ -327,13 +327,13 @@ export default function Home() {
             </div>
             <div className={styles.FeatureCards}>
               <div>
-                <Image
+                <img
                   src="/vehicle doc.svg"
                   alt="Vercel Logo"
-                  className={styles.vercelLogo}
-                  width={48}
-                  height={48}
-                  priority
+                  className={styles.FeatureCardsImg}
+                  // width={48}
+                  // height={48}
+                  // priority
                 />
               </div>
               <div className={styles.cardHeading}>Vehicle Document Storage</div>
@@ -726,7 +726,7 @@ export default function Home() {
         <div>
           <div className={styles.footerIconMobile}>
             <Image
-              src="/logo_black.svg"
+              src="/Trakyo_logo_white.svg"
               alt="Vercel Logo"
               className={styles.vercelLogo}
               width={128}
