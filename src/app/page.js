@@ -803,10 +803,10 @@ export default function Home() {
         <div className={styles.footerMenuMobile}>
           <div>
             <ul className={styles.footerMenuListMobile}>
-              <li>About</li>
-              <li>Features</li>
-              <li>Quick Guide</li>
-              <li>Contact Us</li>
+              <li onClick={() => scrollToSection(About)}>About</li>
+              <li onClick={() => scrollToSection(Features)}>Features</li>
+              <li onClick={() => scrollToSection(Quick_Guide)}>Quick Guide</li>
+              <li onClick={() => scrollToSection(Contact_Us)}>Contact Us</li>
             </ul>
           </div>
           <div className={styles.footerDownloadAreaMobile}>
