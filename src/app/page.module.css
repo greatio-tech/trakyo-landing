@@ -895,7 +895,8 @@
   }
 
   .aboutButton {
-    margin-bottom: 90px;
+    margin-bottom: 40px;
+    width: 100px;
   }
 
   .ThirdPage {
@@ -952,9 +953,9 @@
 
   .Contactus {
     flex-direction: column;
-    justify-content: end;
-    height: 90vh;
+    height: 80vh;
     width: 370px;
+    gap: 10px;
   }
 
   .ContactusShow {
@@ -1105,11 +1106,6 @@
     line-height: 20.49px;
   }
 
-  .aboutButton {
-    margin-bottom: 40px;
-    width: 140px;
-  }
-
   .FeatureCards {
     width: 340px;
   }
@@ -1125,13 +1121,6 @@
   .QuickGuideAreaMobile {
     display: flex;
     flex-direction: column;
-  }
-
-  .Contactus {
-    flex-direction: column;
-    height: 100vh;
-    width: 370px;
-    gap: 10px;
   }
 
   .ContactusShow {
