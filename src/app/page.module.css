@@ -954,7 +954,7 @@
 
   .Contactus {
     flex-direction: column;
-    height: 70vh;
+    height: auto;
     width: 370px;
     gap: 10px;
   }
