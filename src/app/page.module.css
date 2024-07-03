@@ -874,8 +874,8 @@
   }
 
   .aboutLanding {
-    height: 440px;
-    width: 320px;
+    height: 404px;
+    width: 292px;
   }
 
   .aboutContent {
@@ -890,7 +890,7 @@
 
   .aboutText {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     font-size: 14px;
     line-height: 20.49px;
   }
@@ -1005,6 +1005,7 @@
     padding: 30px 2rem;
     background: #000c17;
     color: #ffffff;
+    margin-top: 30px;
   }
   .footerMobile ul {
     list-style: none;
