@@ -13,6 +13,7 @@ html {
   max-width: 100vw;
   /* overflow-y: scroll; */
   scroll-snap-type: y mandatory;
+  background-color: #F2F2F2;
 }
 
 

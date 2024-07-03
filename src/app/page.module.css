@@ -889,7 +889,7 @@
   }
 
   .aboutArea {
-    height: 0px;
+    height: fit-content;
     justify-content: center;
   }
 
@@ -983,6 +983,10 @@
   }
 
   .ContactusArea {
+    height: fit-content;
+  }
+
+  .ContactusArea {
     margin-top: 0px;
   }
 
@@ -1021,7 +1025,7 @@
   .footerMenuListMobile {
     display: flex;
     justify-content: space-evenly;
-    gap: 20px;
+    gap: 18px;
   }
 
   .footerLogo {
