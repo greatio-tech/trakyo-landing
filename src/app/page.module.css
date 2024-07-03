@@ -6,7 +6,7 @@
   min-height: 100vh;
   color: white;
   background: #000c17;
-  font-family: Roboto;
+  /* font-family: Roboto; */
 }
 
 .description {
@@ -1026,12 +1026,14 @@
     font-size: 12px;
     width: 115px;
     height: 40px;
+    gap: 5px;
   }
 
   .iosfooterButton {
     font-size: 12px;
     width: 115px;
     height: 40px;
+    gap: 5px;
   }
 
   .storeImgfooter {
