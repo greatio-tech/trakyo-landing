@@ -888,6 +888,11 @@
     text-align: center;
   }
 
+  .aboutArea {
+    height: 0px;
+    justify-content: center;
+  }
+
   .aboutText {
     width: 100%;
     margin-bottom: 40px;
