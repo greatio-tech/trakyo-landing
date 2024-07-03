@@ -19,6 +19,7 @@ export default function Home() {
   const Mobile = useMediaQuery({ query: "(max-width: 640px)" });
 
   const scrollToSection = (elementRef) => {
+    setMenuHamburger(false);
     window.scrollTo({
       top: elementRef.current.offsetTop,
       behavior: "smooth",
@@ -114,23 +115,23 @@ export default function Home() {
             </div>
             <div className={styles.ButtonArea}>
               <button className={styles.androidButton}>
-                <Image
+                <img
                   src="/playstore.svg"
                   alt="Vercel Logo"
-                  // className={styles.vercelLogo}
-                  width={24}
-                  height={24}
+                  className={styles.storeImg}
+                  // width={24}
+                  // height={24}
                 />
 
                 <span>Android</span>
               </button>
               <button className={styles.iosButton}>
-                <Image
+                <img
                   src="/ios.svg"
                   alt="Vercel Logo"
-                  // className={styles.vercelLogo}
-                  width={24}
-                  height={24}
+                  className={styles.storeImg}
+                  // width={24}
+                  // height={24}
                 />
                 <span style={{ marginTop: "5px" }}>IOS</span>
               </button>
@@ -193,9 +194,16 @@ export default function Home() {
               smarter, safer communities.
             </div>
           </div>
-          <div>
+          <div className={styles.aboutLandingImage}>
             <img
               src="/Landing2.png"
+              alt="Vercel Logo"
+              className={styles.aboutLanding}
+            />
+          </div>
+          <div className={styles.aboutLandingImageMobile}>
+            <img
+              src="/Landing2Mobile.png"
               alt="Vercel Logo"
               className={styles.aboutLanding}
             />
@@ -462,6 +470,14 @@ export default function Home() {
           <div className={styles.QuickGuideContent}>
             <button className={styles.aboutButton}>Quick Guide</button>
             <div className={styles.aboutHowIt}>How it works?</div>
+            <div className={styles.QuickaboutPara}>
+              At Trakyo, our mission is to revolutionize the way people connect
+              with vehicle owners. Founded on the principles of convenience,
+              security, and efficiency, our app aims to bridge the gap between
+              the need for immediate communication and the privacy of
+              individuals. We believe in leveraging technology to create
+              smarter, safer communities.
+            </div>
           </div>
           <div className={styles.QuickGuideIcon}>
             <Image
@@ -481,6 +497,13 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.QuickGuideIcon}>
+            <Image
+              src="/car_icon.svg"
+              alt="Vercel Logo"
+              width={100}
+              height={100}
+              priority
+            />
             <div className={styles.ContentTextArea}>
               <div className={styles.QuickContentTextHeading}>
                 Select Scenario
@@ -491,13 +514,6 @@ export default function Home() {
                 Accident, Blocked Driveway, Suspicious Activity etc..
               </div>
             </div>
-            <Image
-              src="/car_icon.svg"
-              alt="Vercel Logo"
-              width={100}
-              height={100}
-              priority
-            />
           </div>
           <div className={styles.QuickGuideIcon}>
             <Image
@@ -626,12 +642,12 @@ export default function Home() {
       <div className={`${styles.footer} mainSection`}>
         <div>
           <div>
-            <Image
+            <img
               src="/Trakyo_logo_white.svg"
               alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={128}
-              height={70}
+              className={styles.footerLogo}
+              // width={128}
+              // height={70}
               // priority
               onClick={() => scrollToSection(Landing)}
             />
@@ -794,29 +810,25 @@ export default function Home() {
             </ul>
           </div>
           <div className={styles.footerDownloadAreaMobile}>
-            <div>
-              <span style={{ fontSize: "16px", fontWeight: 600 }}>
-                Download our app on:
-              </span>
-            </div>
+            <div></div>
             <div className={styles.ButtonArea}>
-              <button className={styles.androidButton}>
-                <Image
+              <button className={styles.androidfooterButton}>
+                <img
                   src="/playstore.svg"
                   alt="Vercel Logo"
-                  // className={styles.vercelLogo}
-                  width={24}
-                  height={24}
+                  className={styles.storeImgfooter}
+                  // width={24}
+                  // height={24}
                 />
                 Android
               </button>
-              <button className={styles.iosButton}>
-                <Image
+              <button className={styles.iosfooterButton}>
+                <img
                   src="/ios.svg"
                   alt="Vercel Logo"
-                  // className={styles.vercelLogo}
-                  width={24}
-                  height={24}
+                  className={styles.storeImgfooter}
+                  // width={24}
+                  // height={24}
                 />
                 <span style={{ marginTop: "5px" }}>IOS</span>
               </button>

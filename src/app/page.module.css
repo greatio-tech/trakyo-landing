@@ -6,7 +6,7 @@
   min-height: 100vh;
   color: white;
   background: #000c17;
-  /* font-family: Roboto; */
+  font-family: Roboto;
 }
 
 .description {
@@ -143,6 +143,11 @@
   gap: 10px;
 }
 
+.storeImg {
+  width: 24px;
+  height: 24px;
+}
+
 .secondPage {
   display: flex;
   justify-content: center;
@@ -184,7 +189,7 @@
   background: #0461fe1a;
   border: none;
   color: #0461fe;
-  font-family: Roboto;
+  /* font-family: Roboto; */
   font-size: 16px;
   font-weight: 500;
   line-height: 18.75px;
@@ -525,6 +530,36 @@
   flex-direction: column;
 }
 
+.androidfooterButton {
+  width: 210px;
+  height: 56px;
+  border-radius: 8px;
+  background: #ffffff;
+  border: none;
+  color: #0461fe;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.iosfooterButton {
+  width: 210px;
+  height: 56px;
+  border-radius: 8px;
+  background: #0461fe;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .QuickGuideAreaMobile {
   display: none;
 }
@@ -535,6 +570,15 @@
 
 .Toggle {
   display: none;
+}
+
+.aboutLandingImageMobile {
+  display: none;
+}
+
+.footerLogo {
+  width: 128px;
+  height: 70px;
 }
 
 @media (max-width: 1536px) {
@@ -595,7 +639,7 @@
     margin-top: 40px;
   }
   .aboutButton {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 11.85px;
     width: 67.56px;
     height: 31.78px;
@@ -609,7 +653,7 @@
     height: 176.3px;
   }
   .FeatureArea {
-    margin-top: 80px;
+    margin-top: 0px;
   }
   .cardText {
     font-size: 11.85px;
@@ -729,6 +773,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 25px;
     margin: 40px 0px;
   }
@@ -767,7 +812,7 @@
 
 @media (max-width: 600px) {
   .main {
-    padding: 40px 60px;
+    padding: 20px 20px;
   }
 
   .TrakyoLogo {
@@ -781,7 +826,8 @@
   }
 
   .description {
-    width: 70%;
+    width: 90%;
+    position: absolute;
   }
 
   .center {
@@ -810,21 +856,36 @@
     justify-content: center;
   }
 
+  .androidButton {
+    font-size: 14px;
+  }
+
+  .iosButton {
+    font-size: 14px;
+  }
+
+  .storeImg {
+    width: 20px;
+    height: 20px;
+  }
+
   .secondPage {
-    padding: 40px 60px;
+    padding: 60px 20px 0px 20px;
   }
 
   .aboutLanding {
-    height: 290px;
+    height: 440px;
+    width: 320px;
   }
 
   .aboutContent {
-    margin-top: 8px;
+    margin-top: 0px;
   }
 
   .aboutHeading {
     font-size: 20px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .aboutText {
@@ -838,7 +899,7 @@
   }
 
   .ThirdPage {
-    padding: 40px 60px;
+    padding: 60px 20px 0px 20px;
   }
 
   .FeatureCardsImg {
@@ -846,8 +907,12 @@
     height: 32px;
   }
 
+  .FeatureCards {
+    height: 185px;
+  }
+
   .forthPage {
-    padding: 40px 60px;
+    padding: 60px 20px 0px 20px;
   }
 
   .QuickGuideAreaMobile {
@@ -860,15 +925,15 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin: 40px 0px;
+    margin: 40px 0px 0px 0px;
   }
 
   .QuickGuideContent {
-    margin-top: 50px;
+    margin-top: 0px;
   }
 
   .ContentTextshow {
-    width: 165px;
+    width: 80%;
   }
 
   .aboutHowIt {
@@ -876,11 +941,18 @@
   }
 
   .fifthPage {
-    padding: 40px 60px;
+    padding: 60px 20px;
+  }
+
+  .QuickaboutPara {
+    text-align: center;
+    font-size: 14px;
+    line-height: 21.38px;
   }
 
   .Contactus {
     flex-direction: column;
+    justify-content: end;
     height: 90vh;
     width: 370px;
   }
@@ -903,6 +975,10 @@
     flex-direction: column;
   }
 
+  .ContactusArea {
+    margin-top: 0px;
+  }
+
   .input1 {
     width: 400px;
   }
@@ -915,21 +991,52 @@
     gap: 60px;
   }
 
-  .footerMobile {
-    background: #000c17;
-    color: #ffffff;
-  }
-
   .footerMenu {
     gap: 30px;
   }
 
-  .androidButton {
-    width: 170px;
+  .footerMobile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 2rem;
+    background: #000c17;
+    color: #ffffff;
+  }
+  .footerMobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
   }
 
-  .iosButton {
-    width: 170px;
+  .footerMenuListMobile {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+
+  .footerLogo {
+    width: 145px;
+    height: 32px;
+  }
+
+  .androidfooterButton {
+    font-size: 12px;
+    width: 115px;
+    height: 40px;
+  }
+
+  .iosfooterButton {
+    font-size: 12px;
+    width: 115px;
+    height: 40px;
+  }
+
+  .storeImgfooter {
+    width: 15px;
+    height: 15px;
   }
 
   .QuickGuideArea {
@@ -941,13 +1048,15 @@
   .Toggle {
     display: flex;
   }
+  .aboutLandingImage {
+    display: none;
+  }
+  .aboutLandingImageMobile {
+    display: flex;
+  }
 }
 
 @media (max-width: 490px) {
-  .main {
-    padding: 40px 60px;
-  }
-
   .TrakyoLogo {
     height: 24px;
   }
@@ -982,19 +1091,6 @@
     justify-content: center;
   }
 
-  .secondPage {
-    padding: 40px 60px;
-  }
-
-  .aboutLanding {
-    height: 290px;
-    width: 290px;
-  }
-
-  .aboutContent {
-    margin-top: 75px;
-  }
-
   .aboutHeading {
     font-size: 20px;
     margin-bottom: 20px;
@@ -1012,15 +1108,8 @@
     width: 140px;
   }
 
-  .ThirdPage {
-    padding: 40px 60px;
-  }
-
   .FeatureCards {
     width: 340px;
-  }
-  .FeatureArea {
-    margin-top: 50px;
   }
 
   .cardText {
@@ -1036,19 +1125,11 @@
     flex-direction: column;
   }
 
-  .fifthPage {
-    padding: 40px 60px;
-  }
-
   .Contactus {
     flex-direction: column;
     height: 100vh;
     width: 370px;
     gap: 10px;
-  }
-
-  .ContactusArea {
-    margin-top: 40px;
   }
 
   .ContactusShow {
@@ -1059,7 +1140,6 @@
 
   .ContactusForm {
     margin-left: 0px;
-    margin-bottom: 20px;
   }
 
   .ContactusText {
@@ -1137,13 +1217,7 @@
   .footer {
     display: none;
   }
-  .footerMobile {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    padding: 2rem 2rem;
-  }
+
   .footerIconMobile {
     display: flex;
     justify-content: center;
@@ -1164,11 +1238,6 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-  }
-  .footerMenuListMobile {
-    display: flex;
-    justify-content: space-evenly;
-    gap: 7px;
   }
   .footerDownloadAreaMobile {
     display: flex;
