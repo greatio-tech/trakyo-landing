@@ -3,7 +3,7 @@
 }
 .main {
   padding: 40px 160px;
-  min-height: 100vh;
+  min-height: fit-content;
   color: white;
   background: #000c17;
   /* font-family: Roboto; */
@@ -153,7 +153,7 @@
   justify-content: center;
   align-items: center;
   padding: 40px 160px;
-  min-height: 100vh;
+  min-height: fit-content;
   background: #f2f2f2;
 }
 
@@ -167,7 +167,7 @@
   flex-direction: column;
   align-items: center;
   /* justify-content: space-between; */
-  height: 100vh;
+  height: fit-content;
   /* gap: 50px; */
 }
 
@@ -212,7 +212,7 @@
 
 .ThirdPage {
   padding: 40px 160px;
-  min-height: 100vh;
+  min-height: fit-content;
   background: #f2f2f2;
   /* background: #6d624c; */
 }
@@ -273,7 +273,7 @@
 
 .forthPage {
   padding: 40px 160px;
-  min-height: 100vh;
+  min-height: fit-content;
   background: #f2f2f2;
   /* background: #6effb6; */
 }
@@ -288,7 +288,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
   /* gap: 35px; */
   /* justify-content: center; */
 }
@@ -358,7 +358,7 @@
 
 .fifthPage {
   padding: 40px 160px;
-  min-height: 100vh;
+  min-height: fit-content;
   background: #f2f2f2;
   /* background: #0461fe; */
 }
@@ -371,7 +371,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
+  height: fit-content;
   /* gap: 35px;
   justify-content: center; */
   margin-top: 144px;
