@@ -214,6 +214,7 @@
   padding: 40px 160px;
   min-height: 100vh;
   background: #f2f2f2;
+  /* background: #6d624c; */
 }
 
 .FeatureCards {
@@ -274,6 +275,7 @@
   padding: 40px 160px;
   min-height: 100vh;
   background: #f2f2f2;
+  /* background: #6effb6; */
 }
 
 .aboutHowIt {
@@ -358,6 +360,7 @@
   padding: 40px 160px;
   min-height: 100vh;
   background: #f2f2f2;
+  /* background: #0461fe; */
 }
 
 .ContactusGetIn {
@@ -737,6 +740,34 @@
   }
   .footerDownloadText {
     font-size: 11.83px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .secondPage {
+    padding: 0px 118px;
+  }
+  .FeatureArea {
+    margin-top: 163px;
+  }
+  .aboutContent {
+    margin-top: 163px;
+  }
+  .aboutLanding {
+    height: 501.44px;
+  }
+  .forthPage {
+    padding: 0px 118px;
+  }
+  .fifthPage {
+    padding: 0px 118px;
+  }
+  .ContactusArea {
+    margin-top: 0px;
+    justify-content: center;
+  }
+  .QuickContentText {
+    width: 98%;
   }
 }
 
