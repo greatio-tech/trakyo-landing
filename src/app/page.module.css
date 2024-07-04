@@ -581,7 +581,7 @@
   height: 70px;
 }
 
-@media (max-width: 1536px) {
+@media (max-width: 1680px) {
   .main {
     padding: 40px 118px;
   }
