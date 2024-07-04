@@ -166,8 +166,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: space-between; */
-  height: fit-content;
+  justify-content: space-between;
+  /* height: fit-content; */
   /* gap: 50px; */
 }
 
@@ -625,9 +625,9 @@
     width: 155.94px;
     height: 41.39px;
   }
-  .secondPage {
+  /* .secondPage {
     padding: 40px 118px;
-  }
+  } */
   .aboutHeading {
     font-size: 23.7px;
   }
@@ -655,9 +655,9 @@
     width: 379.26px;
     height: 176.3px;
   }
-  .FeatureArea {
+  /* .FeatureArea {
     margin-top: 0px;
-  }
+  } */
   .cardText {
     font-size: 11.85px;
   }
