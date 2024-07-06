@@ -55,6 +55,7 @@
   gap: 32px;
   font-size: 16px;
   z-index: 100;
+  cursor: pointer;
 }
 
 .center {
@@ -677,16 +678,25 @@
   .QuickContentTextHeading {
     font-size: 13.33px;
   }
+  .QuickContentTotal {
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
   .ContentTextshow {
     font-size: 11.85px;
+    width: 230px;
   }
+
   .QuickGuideIconImage {
     width: 88.89px;
     height: 88.89px;
   }
 
   .QuickContentText {
-    width: 92%;
+    width: 90%;
   }
 
   .QuickGuideContent {
@@ -943,6 +953,10 @@
 
   .ThirdPage {
     padding: 60px 20px 0px 20px;
+  }
+
+  .FeatureArea {
+    margin-top: 0px;
   }
 
   .FeatureCardsImg {

@@ -383,85 +383,93 @@ export default function Home() {
             <button className={styles.aboutButton}>Quick Guide</button>
             <div className={styles.aboutHowIt}>How it works?</div>
           </div>
-          <div className={styles.QuickGuide}>
-            <div className={styles.QuickGuideIcon}>
+          <div className={styles.QuickContentTotal}>
+            <div className={styles.QuickGuide}>
+              <div className={styles.QuickGuideIcon}>
+                <Image
+                  src="/scan_card_Icon.svg"
+                  alt="Vercel Logo"
+                  width={120}
+                  height={120}
+                  priority
+                  className={styles.QuickGuideIconImage}
+                />
+              </div>
               <Image
-                src="/scan_card_Icon.svg"
+                src="/dot_line.svg"
                 alt="Vercel Logo"
-                width={120}
-                height={120}
+                width={314}
+                height={14}
                 priority
-                className={styles.QuickGuideIconImage}
               />
-            </div>
-            <Image
-              src="/dot_line.svg"
-              alt="Vercel Logo"
-              width={314}
-              height={14}
-              priority
-            />
-            <div className={styles.QuickGuideIcon}>
+              <div className={styles.QuickGuideIcon}>
+                <Image
+                  src="/car_icon.svg"
+                  alt="Vercel Logo"
+                  width={120}
+                  height={120}
+                  priority
+                  className={styles.QuickGuideIconImage}
+                />
+              </div>
               <Image
-                src="/car_icon.svg"
+                src="/dot_line.svg"
                 alt="Vercel Logo"
-                width={120}
-                height={120}
+                width={314}
+                height={14}
                 priority
-                className={styles.QuickGuideIconImage}
               />
-            </div>
-            <Image
-              src="/dot_line.svg"
-              alt="Vercel Logo"
-              width={314}
-              height={14}
-              priority
-            />
-            <div className={styles.QuickGuideIcon}>
-              <Image
-                src="/touch_icon.svg"
-                alt="Vercel Logo"
-                width={120}
-                height={120}
-                priority
-                className={styles.QuickGuideIconImage}
-              />
-            </div>
-          </div>
-          <div className={styles.QuickContentText}>
-            <div className={styles.ContentTextArea}>
-              <div className={styles.QuickContentTextHeading}>Scan QR Code</div>
-              <div className={styles.ContentTextshow}>
-                Point and scan the QR code displayed on the vehicle. This
-                initiates the process and brings up the options available for
-                that specific vehicle.
+              <div className={styles.QuickGuideIcon}>
+                <Image
+                  src="/touch_icon.svg"
+                  alt="Vercel Logo"
+                  width={120}
+                  height={120}
+                  priority
+                  className={styles.QuickGuideIconImage}
+                />
               </div>
             </div>
-            <div className={styles.ContentTextArea}>
-              <div className={styles.QuickContentTextHeading}>
-                Select Scenario
+            <div className={styles.QuickContentText}>
+              <div className={styles.ContentTextArea}>
+                <div className={styles.QuickContentTextHeading}>
+                  Scan QR Code
+                </div>
+                <div className={styles.ContentTextshow}>
+                  Point and scan the QR code displayed on the vehicle. This
+                  initiates the process and brings up the options available for
+                  that specific vehicle.
+                </div>
               </div>
-              <div className={styles.ContentTextshow}>
-                After scanning, you'll be presented with a list of scenarios to
-                choose from. These can include situations such as: No Parking,
-                Accident, Blocked Driveway, Suspicious Activity etc..
+              <div className={styles.ContentTextArea}>
+                <div className={styles.QuickContentTextHeading}>
+                  Select Scenario
+                </div>
+                <div className={styles.ContentTextshow}>
+                  After scanning, you'll be presented with a list of scenarios
+                  to choose from. These can include situations such as: No
+                  Parking, Accident, Blocked Driveway, Suspicious Activity etc..
+                </div>
               </div>
-            </div>
-            <div className={styles.ContentTextArea}>
-              <div className={styles.QuickContentTextHeading}>Take Action</div>
-              <div className={styles.ContentTextshow}>
-                <span>
-                  <span style={{ fontWeight: "bold" }}>Call Anonymously: </span>
-                  Contact the vehicle owner anonymously.Send Alert via
-                </span>
-                <br />
-                <br />
+              <div className={styles.ContentTextArea}>
+                <div className={styles.QuickContentTextHeading}>
+                  Take Action
+                </div>
+                <div className={styles.ContentTextshow}>
+                  <span>
+                    <span style={{ fontWeight: "bold" }}>
+                      Call Anonymously:{" "}
+                    </span>
+                    Contact the vehicle owner anonymously.Send Alert via
+                  </span>
+                  <br />
+                  <br />
 
-                <span>
-                  <span style={{ fontWeight: "bold" }}>Message: </span>
-                  Opt to send an alert message directly to the vehicle owner.
-                </span>
+                  <span>
+                    <span style={{ fontWeight: "bold" }}>Message: </span>
+                    Opt to send an alert message directly to the vehicle owner.
+                  </span>
+                </div>
               </div>
             </div>
           </div>
