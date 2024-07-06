@@ -14,9 +14,9 @@
   justify-content: space-between;
   align-items: center;
   font-size: 0.85rem;
-  width: 84%;
+  width: 100%;
   z-index: 2;
-  position: fixed;
+  position: sticky;
 }
 
 .description a {
@@ -38,6 +38,9 @@
 .TrakyoLogo {
   height: 36px;
   width: auto;
+}
+.TrakyoLogo2 {
+  height: 80px;
 }
 
 .landingLogo {
@@ -154,7 +157,8 @@
   align-items: center;
   padding: 40px 160px;
   min-height: 100vh;
-  background: #f2f2f2;
+  /* background: #f2f2f2; */
+  background: #ff0000;
 }
 
 .aboutHeading {
@@ -213,8 +217,8 @@
 .ThirdPage {
   padding: 40px 160px;
   min-height: 100vh;
-  background: #f2f2f2;
-  /* background: #6d624c; */
+  /* background: #f2f2f2; */
+  background: #6d624c;
 }
 
 .FeatureCards {
@@ -237,7 +241,7 @@
   /* height: 100vh;
   gap: 50px;
   justify-content: center; */
-  margin-top: 144px;
+  margin-top: 60px;
 }
 
 .FeatureContent {
@@ -274,8 +278,8 @@
 .forthPage {
   padding: 40px 160px;
   min-height: 100vh;
-  background: #f2f2f2;
-  /* background: #6effb6; */
+  /* background: #f2f2f2; */
+  background: #6effb6;
 }
 
 .aboutHowIt {
@@ -371,7 +375,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: fit-content;
+  /* height: fit-content; */
   /* gap: 35px;
   justify-content: center; */
   margin-top: 144px;
@@ -644,7 +648,7 @@
   .aboutButton {
     /* font-family: Roboto; */
     font-size: 11.85px;
-    width: 67.56px;
+    width: 100px;
     height: 31.78px;
     padding: 0px;
   }
@@ -690,6 +694,7 @@
   }
   .QuickGuideArea {
     justify-content: center;
+    margin-top: 60px;
   }
 
   .fifthPage {

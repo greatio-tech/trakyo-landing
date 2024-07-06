@@ -196,7 +196,7 @@ export default function Home() {
           </div>
           <div className={styles.aboutLandingImage}>
             <img
-              src="/Landing2.png"
+              src="/Landing2Mobile.png"
               alt="Vercel Logo"
               className={styles.aboutLanding}
             />
