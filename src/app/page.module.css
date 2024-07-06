@@ -158,8 +158,8 @@
   align-items: center;
   padding: 40px 160px;
   min-height: 100vh;
-  /* background: #f2f2f2; */
-  background: #ff0000;
+  background: #f2f2f2;
+  /* background: #ff0000; */
 }
 
 .aboutHeading {
@@ -217,9 +217,9 @@
 
 .ThirdPage {
   padding: 40px 160px;
-  min-height: 100vh;
-  /* background: #f2f2f2; */
-  background: #6d624c;
+  /* min-height: 100vh; */
+  background: #f2f2f2;
+  /* background: #6d624c; */
 }
 
 .FeatureCards {
@@ -279,8 +279,8 @@
 .forthPage {
   padding: 40px 160px;
   min-height: 100vh;
-  /* background: #f2f2f2; */
-  background: #6effb6;
+  background: #f2f2f2;
+  /* background: #6effb6; */
 }
 
 .aboutHowIt {
@@ -294,7 +294,7 @@
   flex-direction: column;
   align-items: center;
   height: fit-content;
-  /* gap: 35px; */
+  gap: 80px;
   /* justify-content: center; */
 }
 
@@ -350,6 +350,11 @@
 
 .QuickGuideIcon {
   margin: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+
 }
 
 .QuickGuideContent {
@@ -536,6 +541,7 @@
   display: flex;
   gap: 26px;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .androidfooterButton {

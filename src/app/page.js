@@ -394,6 +394,17 @@ export default function Home() {
                   priority
                   className={styles.QuickGuideIconImage}
                 />
+                <div className={styles.ContentTextArea}>
+                  <div className={styles.QuickContentTextHeading}>
+                    Select Scenario
+                  </div>
+                  <div className={styles.ContentTextshow}>
+                    After scanning, you'll be presented with a list of scenarios
+                    to choose from. These can include situations such as: No
+                    Parking, Accident, Blocked Driveway, Suspicious Activity
+                    etc..
+                  </div>
+                </div>
               </div>
               <Image
                 src="/dot_line.svg"
@@ -411,6 +422,17 @@ export default function Home() {
                   priority
                   className={styles.QuickGuideIconImage}
                 />
+                <div className={styles.ContentTextArea}>
+                  <div className={styles.QuickContentTextHeading}>
+                    Select Scenario
+                  </div>
+                  <div className={styles.ContentTextshow}>
+                    After scanning, you'll be presented with a list of scenarios
+                    to choose from. These can include situations such as: No
+                    Parking, Accident, Blocked Driveway, Suspicious Activity
+                    etc..
+                  </div>
+                </div>
               </div>
               <Image
                 src="/dot_line.svg"
@@ -428,9 +450,30 @@ export default function Home() {
                   priority
                   className={styles.QuickGuideIconImage}
                 />
+                <div className={styles.ContentTextArea}>
+                  <div className={styles.QuickContentTextHeading}>
+                    Take Action
+                  </div>
+                  <div className={styles.ContentTextshow}>
+                    <span>
+                      <span style={{ fontWeight: "bold" }}>
+                        Call Anonymously:{" "}
+                      </span>
+                      Contact the vehicle owner anonymously.Send Alert via
+                    </span>
+                    <br />
+                    <br />
+
+                    <span>
+                      <span style={{ fontWeight: "bold" }}>Message: </span>
+                      Opt to send an alert message directly to the vehicle
+                      owner.
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div className={styles.QuickContentText}>
+            {/* <div className={styles.QuickContentText}>
               <div className={styles.ContentTextArea}>
                 <div className={styles.QuickContentTextHeading}>
                   Scan QR Code
@@ -471,7 +514,7 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.QuickGuideAreaMobile}>
@@ -713,10 +756,10 @@ export default function Home() {
         <div className={styles.footerMenu}>
           <div>
             <ul className={styles.footerMenuList}>
-              <li>About</li>
-              <li>Features</li>
-              <li>Quick Guide</li>
-              <li>Contact Us</li>
+              <li onClick={() => scrollToSection(About)}>About</li>
+              <li onClick={() => scrollToSection(Features)}>Features</li>
+              <li onClick={() => scrollToSection(Quick_Guide)}>Quick Guide</li>
+              <li onClick={() => scrollToSection(Contact_Us)}>Contact Us</li>
             </ul>
           </div>
           <div className={styles.footerDownloadArea}>
