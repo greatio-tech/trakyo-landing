@@ -697,9 +697,6 @@ export default function Home() {
               src="/Trakyo_logo_white.svg"
               alt="Vercel Logo"
               className={styles.footerLogo}
-              // width={128}
-              // height={70}
-              // priority
               onClick={() => scrollToSection(Landing)}
             />
           </div>
@@ -712,9 +709,6 @@ export default function Home() {
                   src="/facebook.svg"
                   alt="Vercel Logo"
                   className={styles.SocialLogos}
-                  // width={40}
-                  // height={40}
-                  // priority
                 />
               </div>
               <div className={styles.footerSocialArea}>
@@ -723,9 +717,6 @@ export default function Home() {
                   src="/instagram.svg"
                   alt="Vercel Logo"
                   className={styles.SocialLogos}
-                  // width={40}
-                  // height={40}
-                  // priority
                 />
               </div>
               <div className={styles.footerSocialArea}>
